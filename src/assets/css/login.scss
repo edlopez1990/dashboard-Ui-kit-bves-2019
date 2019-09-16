@@ -1,0 +1,173 @@
+section.main-login {
+  .sidebar-img-login {
+    background: url('/assets/img/sidebar-login.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .block {
+
+    height: calc(100vh - 51px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+
+    .content-block {}
+
+    .sidebar-main {
+
+
+      h1::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #fff;
+        width: 74%;
+        margin: 0;
+        -webkit-transform: translateY(-1rem);
+        transform: translateY(-1rem);
+      }
+
+      h1 {
+        max-width: 126px;
+        font-family: Lato;
+        font-size: 22px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        margin-bottom: 50px;
+
+      }
+
+
+
+      p {
+        max-width: 208px;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+
+        margin: 15px 0px;
+      }
+
+      a {
+        max-width: 65px;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+    }
+
+    .content-login {
+      .logo {
+        width: 144px;
+        height: 44px;
+
+        margin-bottom: 75px;
+      }
+
+      h1 {
+        max-width: 166px;
+        font-family: Lato;
+        font-size: 28px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #5a5a5a;
+      }
+
+      p {
+        max-width: 361px;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #a8a8a8;
+
+
+        margin: 20px 0px 40px;
+      }
+
+      form {
+        .form-group {
+          label {
+
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #5a5a5a;
+            display: block;
+            margin: 10px;
+          }
+
+          a.right {
+
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #002b98;
+            text-align: right;
+            display: block;
+            margin: 20px 10px 20px 0px;
+          }
+
+          .form-control {
+            max-width: 365px;
+            height: 52px;
+            opacity: 0.85;
+            border-radius: 5px;
+            border: solid 1px #e2e2e2;
+            background-color: #ffffff;
+          }
+
+          button {
+            width: 262px;
+            height: 47px;
+            border-radius: 5px;
+            background-color: #009444;
+            margin: auto;
+            display: block;
+
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+
+}

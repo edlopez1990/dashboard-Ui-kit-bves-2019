@@ -1,0 +1,123 @@
+section.error {
+  background: url('/assets/img/bg-error.png'), url('assets/img/error-vector.png'), linear-gradient(to top, #0230a6, #010211 80%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 144px;
+    height: 44px;
+  }
+
+  .block {
+    text-align: center;
+  }
+
+  .show-error {
+    margin: 50px 0px;
+
+    h1 {
+      max-width: 112px;
+      opacity: 0.6;
+      font-family: Lato;
+      font-size: 64px;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin: auto;
+    }
+
+    p {
+      max-width: 117px;
+      opacity: 0.6;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin: auto;
+
+    }
+  }
+
+  .description-error {
+    margin-bottom: 25px;
+
+    h1 {
+      max-width: 422px;
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin: auto;
+    }
+
+    p {
+      max-width: 613px;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      font-weight: bold;
+      margin: auto;
+    }
+  }
+
+
+  .action-button {
+
+    .btn-green {
+      width: 190px;
+      height: 56px;
+      border-radius: 6px;
+      background-color: #009444;
+      border: solid 1px #009444;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-top: 10px;
+      margin: 10px;
+    }
+
+    .btn-transparent {
+      margin-top: 10px;
+      width: 190px;
+      height: 56px;
+      border-radius: 6px;
+      border: solid 1px #ffffff;
+      background: transparent;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+    }
+  }
+}

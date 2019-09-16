@@ -1,0 +1,126 @@
+section.error {
+  background: url("/assets/img/bg-error.png"), url("assets/img/error-vector.png"), -webkit-gradient(linear, left bottom, left top, from(#0230a6), color-stop(80%, #010211));
+  background: url("/assets/img/bg-error.png"), url("assets/img/error-vector.png"), linear-gradient(to top, #0230a6, #010211 80%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.error img {
+  width: 144px;
+  height: 44px;
+}
+
+section.error .block {
+  text-align: center;
+}
+
+section.error .show-error {
+  margin: 50px 0px;
+}
+
+section.error .show-error h1 {
+  max-width: 112px;
+  opacity: 0.6;
+  font-family: Lato;
+  font-size: 64px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin: auto;
+}
+
+section.error .show-error p {
+  max-width: 117px;
+  opacity: 0.6;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin: auto;
+}
+
+section.error .description-error {
+  margin-bottom: 25px;
+}
+
+section.error .description-error h1 {
+  max-width: 422px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin: auto;
+}
+
+section.error .description-error p {
+  max-width: 613px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-weight: bold;
+  margin: auto;
+}
+
+section.error .action-button .btn-green {
+  width: 190px;
+  height: 56px;
+  border-radius: 6px;
+  background-color: #009444;
+  border: solid 1px #009444;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top: 10px;
+  margin: 10px;
+}
+
+section.error .action-button .btn-transparent {
+  margin-top: 10px;
+  width: 190px;
+  height: 56px;
+  border-radius: 6px;
+  border: solid 1px #ffffff;
+  background: transparent;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+/*# sourceMappingURL=error.css.map */
