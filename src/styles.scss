@@ -94,9 +94,584 @@ video {
 
 body {
 
+
+  // ui/kit class btn primeario
+
+  .btn-ui {
+    button {
+      width: 179px;
+      height: 44px;
+      font-family: Lato;
+      font-size: 13px;
+    }
+  }
+
+  .btn-primario {
+    button {
+      background-color: #002B98 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+
+    button:hover {
+      background-color: #042476 !important;
+      border-radius: 5px !important;
+    }
+
+    button:focus {
+      background-color: #002B98 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-hover {
+    button {
+      background-color: #042476 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-focus {
+    button {
+      background-color: #002B98 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-disable {
+    button {
+      text-decoration: none !important;
+      color: #7695A4 !important;
+      background-color: #EBEBEB !important;
+      border-radius: 5px !important;
+    }
+  }
+
+
+  // ui/kit class btn secundario
+  .btn-secundario {
+    button {
+      background-color: #ffff !important;
+      border: 1px solid #0230A6 !important;
+      border-radius: 5px !important;
+      color: #0230A6 !important;
+      text-decoration: none !important;
+    }
+
+    button:hover {
+      background-color: #042476 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+    }
+
+    button:focus {
+      background-color: #002B98 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-hover {
+    button {
+      background-color: #042476 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-focus {
+    button {
+      background-color: #ffff !important;
+      border: 1px solid #0230A6 !important;
+      border-radius: 5px !important;
+      color: #0230A6 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-disable {
+    button {
+      text-decoration: none !important;
+      color: #7695A4 !important;
+      background-color: #EBEBEB !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  // ui/kit class btn primario venta
+  .btn-primario-compra {
+    button {
+      background-color: #FC7C05 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+
+    button:hover {
+      background-color: #ED923E !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+    }
+
+    button:focus {
+      background-color: #FC7C05 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-compra-hover {
+    button {
+      background-color: #ED923E !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-compra-focus {
+    button {
+      background-color: #FC7C05 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-compra-disable {
+    button {
+      text-decoration: none !important;
+      color: #7695A4 !important;
+      background-color: #EBEBEB !important;
+      border-radius: 5px !important;
+    }
+  }
+
+
+  // ui/kit class btn secundario
+  .btn-secundario-compra {
+    button {
+      background-color: #ffff !important;
+      border: 1px solid #FC7C05 !important;
+      border-radius: 5px !important;
+      color: #FC7C05 !important;
+      text-decoration: none !important;
+    }
+
+    button:hover {
+      background-color: #FC7C05 !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+
+    button:focus {
+      background-color: #FC7C05 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-compra-hover {
+    button {
+      background-color: #FC7C05 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-compra-focus {
+    button {
+      background-color: #ffff !important;
+      border: 1px solid #FC7C05 !important;
+      border-radius: 5px !important;
+      color: #FC7C05 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-compra-disable {
+    button {
+      text-decoration: none !important;
+      color: #7695A4 !important;
+      background-color: #EBEBEB !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  // ui/kit class btn primario venta
+  .btn-primario-venta {
+    button {
+      background-color: #00B147 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+
+    button:hover {
+      background-color: #00B147 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+    }
+
+    button:focus {
+      background-color: #00B147 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-venta-hover {
+    button {
+      background-color: #25BA61 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-venta-focus {
+    button {
+      background-color: #00B147 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-primario-venta-disable {
+    button {
+      text-decoration: none !important;
+      color: #7695A4 !important;
+      background-color: #EBEBEB !important;
+      border-radius: 5px !important;
+    }
+  }
+
+
+  // ui/kit class btn secundario
+  .btn-secundario-venta {
+    button {
+      background-color: #ffff !important;
+      border: 1px solid #00B147 !important;
+      border-radius: 5px !important;
+      color: #00B147 !important;
+      text-decoration: none !important;
+    }
+
+    button:hover {
+      background-color: #00B147 !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+
+    button:focus {
+      background-color: #00B147 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-venta-hover {
+    button {
+      background-color: #25BA61 !important;
+      border-radius: 5px !important;
+      color: #fff !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-venta-focus {
+    button {
+      background-color: #ffff !important;
+      border: 1px solid #00B147 !important;
+      border-radius: 5px !important;
+      color: #00B147 !important;
+      border-radius: 5px !important;
+    }
+  }
+
+  .btn-secundario-venta-disable {
+    button {
+      text-decoration: none !important;
+      color: #7695A4 !important;
+      background-color: #EBEBEB !important;
+      border-radius: 5px !important;
+    }
+  }
+
+
+
+
+  // ui/kit class bgroupbuttons
+
+  .groupbuttons-primario {
+    .e-btn-group {
+      border: 1px solid #0230A6;
+      border-radius: 5px;
+      width: 195px;
+      height: 44px;
+
+      button {
+        width: calc(100% / 2);
+        border-radius: 5px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      button:nth-child(1) {
+        margin-left: 3px !important;
+      }
+
+      button:nth-child(2) {
+        margin-right: 3px !important;
+      }
+
+      button:hover,
+      button:active,
+      button:focus {
+        background-color: #002B98 !important;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .groupbuttons-compra {
+    .e-btn-group {
+      border: 1px solid #00B147;
+      border-radius: 5px;
+      width: 195px;
+      height: 44px;
+
+      button {
+        width: calc(100% / 2);
+        border-radius: 5px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      button:nth-child(1) {
+        margin-left: 3px !important;
+      }
+
+      button:nth-child(2) {
+        margin-right: 3px !important;
+      }
+
+      button:hover,
+      button:active,
+      button:focus {
+        background-color: #00B147 !important;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .groupbuttons-venta {
+    .e-btn-group {
+      border: 1px solid #FC7C05;
+      border-radius: 5px;
+      width: 195px;
+      height: 44px;
+
+      button {
+        width: calc(100% / 2);
+        border-radius: 5px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+      }
+
+      button:nth-child(1) {
+        margin-left: 3px !important;
+      }
+
+      button:nth-child(2) {
+        margin-right: 3px !important;
+      }
+
+      button:hover,
+      button:active,
+      button:focus {
+        background-color: #FC7C05 !important;
+        color: #fff !important;
+      }
+    }
+  }
+
+  //toggleswitch
+
+  .toggleswitch {
+    .e-switch-wrapper {
+      height: 25px;
+      width: 42px;
+
+      .e-switch-handle {
+        height: 22px !important;
+        width: 22px !important;
+        top: -1px;
+      }
+
+      .e-switch-handle.e-switch-active {
+        margin-left: -24px !important;
+        background-color: #fff;
+      }
+
+      .e-switch-on {
+        background-color: #002B98;
+      }
+
+      .e-switch-off {
+        background-color: #002B98;
+        opacity: 0.2404901413690476;
+      }
+
+
+    }
+
+    .e-switch-wrapper:hover {
+      .e-switch-inner.e-switch-active {
+        .e-switch-on {
+          background-color: #002B98;
+        }
+      }
+    }
+  }
+
+  .textbox {
+    .wrap {
+      padding: 0px;
+      width: auto;
+
+      .e-input-group {
+        border: 0px !important;
+
+        input {
+          background-color: #FFFFFF;
+          border: 1px solid #E2E2E2;
+          padding: 0px 10px;
+          border-radius: 5px;
+          width: 100%;
+          height: 44px;
+          margin: 5px 0px;
+        }
+
+        label {
+          color: #5A5A5A;
+          font-family: Lato;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 16px;
+          text-align: left;
+          left: 10px;
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    label {
+      font-family: Lato;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: left;
+      left: 10px;
+      color: #5A5A5A;
+    }
+
+    .e-dropdownlist {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E2E2;
+      border-radius: 5px;
+      height: 44px;
+
+      span {
+        height: 44px;
+        border: 0px !important;
+        padding: 0px 10px;
+      }
+    }
+  }
+
+
+  .custom-grid {
+
+    .e-grid .e-headercell,
+    .e-grid .e-detailheadercell {
+      padding: 17px 10px 17px 10px;
+    }
+
+    .e-table {
+      tbody tr:nth-child(odd) {
+        background-color: #F4F5F9;
+      }
+    }
+
+    .e-pager {
+      .e-currentitem {
+        background: #E8EEFD;
+
+        color: #002B98;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+        text-align: center;
+      }
+    }
+
+    .e-grid {
+      .e-rowcell {
+        color: #4A4A4A !important;
+      }
+    }
+  }
+
+  .boton-progress-butt {
+    color: #858585;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    text-align: left;
+  }
+
   @import './assets/css/login.scss';
   @import './assets/css/error.scss';
   @import './assets/css/dashboard.scss';
+
+
+  @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+
+  @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
+
+
+
+
+
+  .panel {
+    border-radius: 5px;
+    border: solid 1px #dfdfdf;
+    background-color: #fbfbfc;
+    margin: 10px 0px;
+
+    .panel-head {
+      height: 40px;
+      padding: 10px;
+    }
+  }
+
 
   .footer {
     height: 51px;
