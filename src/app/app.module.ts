@@ -24,11 +24,47 @@ import { TextboxComponent } from './allcomponents/textbox/textbox.component';
 import { DropdownlistComponent } from './allcomponents/dropdownlist/dropdownlist.component';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import {TextBoxModule} from '@syncfusion/ej2-angular-inputs';
+import { CalendarComponent } from './allcomponents/calendar/calendar.component';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+import { CalendarRangeComponent } from './allcomponents/calendar-range/calendar-range.component';
+import { InputNumberComponent } from './allcomponents/input-number/input-number.component';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { FormsModule } from '@angular/forms';
+import { InputTimeComponent } from './allcomponents/input-time/input-time.component';
+import { CheckboxComponent } from './allcomponents/checkbox/checkbox.component';
+import { CheckboxFrameComponent } from './allcomponents/checkbox-frame/checkbox-frame.component';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { SliderLimitsComponent } from './allcomponents/slider-limits/slider-limits.component';
+import { SliderModule } from '@syncfusion/ej2-angular-inputs';
+import { ChipsComponent } from './allcomponents/chips/chips.component';
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons';
+import { TooltipComponent } from './allcomponents/tooltip/tooltip.component';
+import { TooltipModule } from '@syncfusion/ej2-angular-popups';
+import { CardComponent } from './allcomponents/card/card.component';
+import { ToastComponent } from './allcomponents/toast/toast.component';
+import { ToastModule } from '@syncfusion/ej2-angular-notifications';
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AcordionComponent } from './allcomponents/acordion/acordion.component';
+import { TabsComponent } from './allcomponents/tabs/tabs.component';
+
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations';
+
+import { TabModule } from '@syncfusion/ej2-angular-navigations';
+import { MenuComponent } from './allcomponents/menu/menu.component';
+import { MenuModule } from '@syncfusion/ej2-angular-navigations';
+import { PopupComponent } from './allcomponents/popup/popup.component';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { MenuVerticalComponent } from './allcomponents/menu-vertical/menu-vertical.component';
+import { ContextMenuComponent } from './allcomponents/context-menu/context-menu.component';
+
+
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
+
 enableRipple(true);
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent],
-  imports: [  TextBoxModule,DropDownListModule,SwitchModule,ButtonModule,GridModule,BrowserModule, AppRoutingModule, RouterModule.forRoot([])],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent, CalendarComponent, CalendarRangeComponent, InputNumberComponent, InputTimeComponent, CheckboxComponent, CheckboxFrameComponent, SliderLimitsComponent, ChipsComponent, TooltipComponent, CardComponent, ToastComponent, AcordionComponent, TabsComponent, MenuComponent, PopupComponent, MenuVerticalComponent, ContextMenuComponent],
+  imports: [ContextMenuModule,DialogModule,MenuModule,TabModule,AccordionModule,ToastModule,DatePickerModule,TooltipModule,ChipListModule,SliderModule,CheckBoxModule,FormsModule, NumericTextBoxModule,CalendarModule, TextBoxModule,DropDownListModule,SwitchModule,ButtonModule,GridModule,BrowserModule, AppRoutingModule, RouterModule.forRoot([])],
   providers: [PageService,
     SortService,
     FilterService,

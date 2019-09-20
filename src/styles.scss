@@ -637,6 +637,168 @@ body {
     text-align: left;
   }
 
+  .input-number {
+    .e-numeric {
+      border: 1px solid #E2E2E2 !important;
+      border-radius: 5px !important;
+      height: 44px !important;
+      padding: 10px;
+    }
+  }
+
+  .ui-checkbox {
+    ul {
+      list-style: none;
+    }
+
+    .e-checkbox-wrapper .e-frame.e-check,
+    .e-css.e-checkbox-wrapper .e-frame.e-check {
+      background-color: #00B147 !important;
+    }
+  }
+
+  .ui-acordion {
+    .e-accordion {
+      border: 0px solid #E2E2E2 !important;
+
+      .e-acrdn-header-content {
+        color: #002B98 !important;
+      }
+
+      .e-acrdn-header {
+        background-color: #F6F6F6;
+        border: 1px solid #E2E2E2;
+        border-radius: 5px 5px 0 0;
+        height: 44px;
+      }
+
+      .e-acrdn-panel {
+        border: 1px solid #E2E2E2;
+      }
+    }
+  }
+
+  .ui-horizontal-menu {
+    .e-menu-wrapper {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E2E2;
+      border-radius: 5px 5px 5px 5px;
+      /* width: 418px; */
+      height: 44px;
+    }
+  }
+
+  .ui-vertical-menu {
+    .e-menu-wrapper {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E2E2;
+      border-radius: 5px;
+
+      ul {
+        min-width: 233px;
+      }
+
+    }
+  }
+
+  .ui-card {
+    .e-card {
+      padding: 10px;
+      background-color: #FFFFFF;
+      border: 1px solid #9B9B9B;
+      border-radius: 6px;
+
+      width: 268px;
+      /* height: 75px; */
+      border-left: 5px solid #002B98;
+
+      .e-card-title {
+        color: #002B98;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .ui-tab {
+    .e-tab {
+      .e-tab-wrap:hover {
+        .e-tab-text {
+          color: #002B98 !important;
+
+        }
+      }
+
+      .e-text-wrap:hover {
+        .e-tab-text {
+          color: #002B98 !important;
+
+        }
+      }
+
+      .e-tab-header {
+        .e-active {
+          .e-tab-text {
+            color: #002B98;
+
+          }
+        }
+
+        .e-indicator {
+          background-color: #002B98;
+        }
+
+        .e-tab-wrap:hover {
+          color: #002B98;
+        }
+
+        .e-toolbar-item.e-active {
+          .e-tab-text {
+            color: #002B98;
+
+          }
+        }
+
+      }
+    }
+  }
+
+  .ui-tooltip {
+    .tooltipContent {
+      input {
+        background-color: #002B98;
+        border-radius: 5px;
+        width: 179px;
+        height: 44px;
+        color: #fff;
+      }
+    }
+  }
+
+  .ui-toast {
+    button {
+      background-color: #002B98 !important;
+      border-radius: 5px;
+      width: 179px;
+      height: 44px;
+      color: #fff;
+    }
+  }
+
+  .ui-popup {
+    button#targetButton {
+      background-color: #002B98 !important;
+      border-radius: 5px;
+      width: 179px;
+      height: 44px;
+      color: #fff;
+    }
+  }
+
   @import './assets/css/login.scss';
   @import './assets/css/error.scss';
   @import './assets/css/dashboard.scss';
@@ -657,8 +819,8 @@ body {
   @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 
 
-
-
+  @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-calendars/styles/material.css';
 
   .panel {
     border-radius: 5px;
@@ -700,3 +862,106 @@ body {
     }
   }
 }
+
+/* csslint ignore:start */
+#container {
+  margin: 25px;
+}
+
+#elementToastTime .e-toast {
+  width: 500px;
+  height: 147px;
+}
+
+#elementToastTime {
+  text-align: center;
+}
+
+#elementToastTime img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#elementToastTime .e-toast-message {
+  width: inherit;
+}
+
+#sample_container {
+  margin: 10px;
+}
+
+body>#element .e-toast {
+  width: 400px !important;
+}
+
+#template_toast .horizontal-align {
+  margin: 10px 0;
+}
+
+#template_toast .horizontal-align .toast-content .toast-message {
+  opacity: 0.4;
+}
+
+#template_toast .horizontal-align .toast-content {
+  display: inline-flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.progress {
+  height: 20px;
+  position: relative;
+  margin: 20px 0 20px 0;
+  background: #555;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.progress span {
+  background-color: #f0a3a3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0a3a3), color-stop(1, #f42323));
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress span::after {
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: 50px 50px;
+  -webkit-animation: moveAnimate 2s linear infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes moveAnimate {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+/* csslint ignore:end */
