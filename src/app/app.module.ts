@@ -57,18 +57,24 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { MenuVerticalComponent } from './allcomponents/menu-vertical/menu-vertical.component';
 import { ContextMenuComponent } from './allcomponents/context-menu/context-menu.component';
 
-
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
+import { HomeComponent } from './home/home.component';
+import { ChartComponent } from './allcomponents/chart/chart.component';
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, LineSeriesService} from '@syncfusion/ej2-angular-charts';
+
+
+
 
 enableRipple(true);
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent, CalendarComponent, CalendarRangeComponent, InputNumberComponent, InputTimeComponent, CheckboxComponent, CheckboxFrameComponent, SliderLimitsComponent, ChipsComponent, TooltipComponent, CardComponent, ToastComponent, AcordionComponent, TabsComponent, MenuComponent, PopupComponent, MenuVerticalComponent, ContextMenuComponent],
-  imports: [ContextMenuModule,DialogModule,MenuModule,TabModule,AccordionModule,ToastModule,DatePickerModule,TooltipModule,ChipListModule,SliderModule,CheckBoxModule,FormsModule, NumericTextBoxModule,CalendarModule, TextBoxModule,DropDownListModule,SwitchModule,ButtonModule,GridModule,BrowserModule, AppRoutingModule, RouterModule.forRoot([])],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent, CalendarComponent, CalendarRangeComponent, InputNumberComponent, InputTimeComponent, CheckboxComponent, CheckboxFrameComponent, SliderLimitsComponent, ChipsComponent, TooltipComponent, CardComponent, ToastComponent, AcordionComponent, TabsComponent, MenuComponent, PopupComponent, MenuVerticalComponent, ContextMenuComponent, HomeComponent, ChartComponent],
+  imports: [ChartModule,ContextMenuModule,DialogModule,MenuModule,TabModule,AccordionModule,ToastModule,DatePickerModule,TooltipModule,ChipListModule,SliderModule,CheckBoxModule,FormsModule, NumericTextBoxModule,CalendarModule, TextBoxModule,DropDownListModule,SwitchModule,ButtonModule,GridModule,BrowserModule, AppRoutingModule, RouterModule.forRoot([])],
   providers: [PageService,
     SortService,
     FilterService,
-    GroupService],
+    GroupService,CategoryService, LineSeriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

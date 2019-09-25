@@ -15,11 +15,10 @@
               </svg>
             </label>
             <ul class="menu-sidebar">
-              <li (click)="toggleMicroOne()">Main Dashboard</li>
-              <li (click)="toggleMicroTwo()">UI/KIT</li>
-              <li><a class="nav-link register-custom" routerLink="/dashboard">DASHBOARD</a></li>
-              <li><a class="nav-link register-custom" routerLink="/login">LOGIN</a></li>
-              <li><a class="nav-link register-custom" routerLink="/error">ERROR</a></li>
+              <li><a class="nav-link register-custom" (click)="onTabClick(0)">HOME</a></li>
+
+              <li><a class="nav-link register-custom" (click)="onTabClick(1)">UI/KIT</a></li>
+              <li><a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a></li>
               <li>
                 <input type="checkbox" id="sub-one" class="submenu-toggle">
                 <label class="submenu-label" for="sub-one">Category</label>
@@ -81,76 +80,61 @@
     </div>
   </header>
   <section class="main">
-    <!-- <div [innerHTML]="toShow"></div> -->
-    <!--The content below is only a placeholder and can be replaced.-->
-    <section class="market">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <ul>
-              <li>
-                <div class="content">
-                  <img src="./assets/img/file-document-plus.svg" alt=""> <label for="">Mercado Primario</label> <label
-                    for="">03:00 hr</label>
-                  <div class="circle"></div>
-                </div>
-              </li>
-              <li>
-                <div class="content">
-                  <img src="./assets/img/file-document.svg" alt=""> <label for="">Mercado Primario</label> <label
-                    for="">03:00
-                    hr</label>
-                  <div class="circle"></div>
-                </div>
-              </li>
-              <li>
-                <div class="content">
-                  <img src="./assets/img/earth.svg" alt=""> <label for="">Mercado Primario</label> <label for="">03:00
-                    hr</label>
-                  <div class="circle"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="panel">
-            <div class="panel-head">
-              <h1>Filtrar:</h1>
-            </div>
-            <div class="panel-body">
+    <div class="main-content">
+      <app-home *ngIf="tabIndex === 0"></app-home>
+      <app-uikit *ngIf="tabIndex === 1"></app-uikit>
+      <app-error *ngIf="tabIndex === 2"></app-error>
+    </div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <br>
-          <h1 class="boton-progress-butt "> Table </h1>
-          <br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <app-grid class='custom-grid'></app-grid>
-        </div>
+    <div class="sidebar-right">
+      <div>
+        <ul>
+          <li>
+            <a href="" class="circle-blue">
+              <img src="./assets/img/frame_white.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="" class="circle-blue">
+              <img src="./assets/img/frame_white.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="" class="circle-blue">
+              <img src="./assets/img/frame_white.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="" class="circle-blue">
+              <img src="./assets/img/frame_white.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="" class="circle-white">
+              <img src="./assets/img/ico-cruz.svg" alt="">
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              <svg class="icon-close" viewBox="0 0 100 100">
+                <path fill="#5a5a5a"
+                  d="M83.288 88.13c-2.114 2.112-5.575 2.112-7.69 0L53.66 66.188c-2.113-2.112-5.572-2.112-7.686 0l-21.72 21.72c-2.114 2.113-5.572 2.113-7.687 0l-4.693-4.692c-2.114-2.114-2.114-5.573 0-7.688l21.72-21.72c2.112-2.115 2.112-5.574 0-7.687L11.87 24.4c-2.114-2.113-2.114-5.57 0-7.686l4.842-4.842c2.113-2.114 5.57-2.114 7.686 0l21.72 21.72c2.114 2.113 5.572 2.113 7.688 0l21.72-21.72c2.115-2.114 5.574-2.114 7.688 0l4.695 4.695c2.112 2.113 2.112 5.57-.002 7.686l-21.72 21.72c-2.112 2.114-2.112 5.573 0 7.686L88.13 75.6c2.112 2.11 2.112 5.572 0 7.687l-4.842 4.84z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 </section>
-
 <footer>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 footer">
-        <img src="./assets/img/logo-gris.png" alt=""> &nbsp &nbsp &nbsp
-        <p>Bolsa de Valores de El Salvador®. Todos los derechos reservado</p>
+        <img src="./assets/img/logo-gris.png" alt="">
+        <p [innerHTML]="text"></p>
       </div>
     </div>
   </div>

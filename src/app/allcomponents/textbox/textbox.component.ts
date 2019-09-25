@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
         <input type="text" id="textBox1" 
         #testTextBox1 (focus)="tb1Focused = true" (blur)="tb1Focused = false"/>
         <span class="e-float-line"></span>
-        <label class="e-float-text" >Enter Name</label>
     </div>
 </div>`,
   styleUrls: ['./textbox.component.scss']

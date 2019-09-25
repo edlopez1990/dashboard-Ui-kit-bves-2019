@@ -52,6 +52,7 @@ section.dashboard {
         width: 100%;
         height: 100%;
         text-decoration: none;
+        font-family: Lato;
       }
     }
 
@@ -216,7 +217,11 @@ section.dashboard {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 5%;
+    padding: 0px 0%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
 
     .column_one {
       display: flex;
@@ -228,8 +233,8 @@ section.dashboard {
 
       img {
         width: 91px;
-        height: 28px;
-        object-fit: contain;
+        // height: 28px;
+        // object-fit: contain;
       }
     }
 
@@ -289,11 +294,20 @@ section.dashboard {
 
 
         li {
-          width: 74px;
+          width: 120px;
           height: 59px;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #5a5a5a;
 
           .bell {
             width: 22px;
@@ -346,6 +360,11 @@ section.dashboard {
 
           label {
             padding: 0px 10px;
+
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 600;
+            color: #5a5a5a;
           }
         }
 
@@ -357,5 +376,12 @@ section.dashboard {
         }
       }
     }
+  }
+
+  .main {
+    // top: 59px;
+    margin-top: 59px;
+    position: relative;
+    z-index: 0;
   }
 }

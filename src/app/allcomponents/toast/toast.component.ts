@@ -3,41 +3,27 @@ import { Component, OnInit ,ViewChild} from '@angular/core';
 @Component({
   selector: 'app-toast',
   template: `
-        <div id="toast_target"></div>
-        <button ejs-button [isPrimary]="true" (click)="btnClick($event)">Show Toast</button>
-        <ejs-toast #element (created)="onCreate($event)"  [position] = 'position' > </ejs-toast>
-        `,
+       <button ejs-button [isPrimary]="true" (click)="btnClick($event)">Show Toast</button>
+        <ejs-toast #element (created)="onCreate($event)" [position]='position'>
+              <ng-template #title>
+                  <div>Matt sent you a friend request</div>
+              </ng-template>
+              <ng-template #content>
+                  <div>Hey, wanna dress up as wizards and ride our hoverboards?</div>
+              </ng-template>
+    </ejs-toast>`,
   styleUrls: ['./toast.component.scss']
 })
-export class ToastComponent implements OnInit {
+export class ToastComponent  {
   @ViewChild('element') element;
-    public position = { X: 'Right', Y: 'Bottom' };
-    public toasts = [
-    { title: 'Warning !', content: 'There was a problem with your network connection.', cssClass: 'e-toast-warning' },
-    { title: 'Success !', content: 'Your message has been sent successfully.', cssClass: 'e-toast-success'},
-    { title: 'Error !', content: 'A problem has been occurred while submitting your data.', cssClass: 'e-toast-danger' },
-    { title: 'Information !', content: 'Please read the comments carefully.', cssClass: 'e-toast-info' } ];
-    public toastFlag: number = 0;
+  public position = { X: 'Right' };
 
+  onCreate() {
+    this.element.show();
+  }
 
-    onCreate() {
-      this.element.show(this.toasts[this.toastFlag]);
-      ++this.toastFlag;
-    }
-    btnClick() {
-      this.toastShow();
-    }
-    toastShow() {
-          setTimeout(
-        () => {
-            this.element.show(this.toasts[this.toastFlag]);
-            ++this.toastFlag;
-              if (this.toastFlag === (this.toasts.length)) {
-                this.toastFlag = 0;
-               }
-        }, 0);
-    }
-  ngOnInit() {
+  btnClick() {
+    this.element.show();
   }
 
 }

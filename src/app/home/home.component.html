@@ -1,0 +1,131 @@
+<section class="market">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+          <li>
+            <div class="content">
+              <img src="./assets/img/file-document-plus.svg" alt=""> <label for="">Mercado Primario</label> <label
+                for="">03:00 hr</label>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <img src="./assets/img/file-document.svg" alt=""> <label for="">Mercado Primario</label> <label
+                for="">03:00
+                hr</label>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <img src="./assets/img/earth.svg" alt=""> <label for="">Mercado Primario</label> <label for="">03:00
+                hr</label>
+              <div class="circle"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="panel">
+          <div>
+            <app-groupbuttons class="groupbuttons-compra"></app-groupbuttons>
+            <br>
+            <br>
+            <h1>Consulta de Operaciones</h1>
+            <div class="block-green">
+              <label for="">Total de Compra:</label> <strong>$2436,049,4940</strong>
+            </div>
+
+            <div class="block-gray">
+              <label for="">Total de Venta:</label> <strong>$2436,049,4940</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="panel">
+          <div>
+            <app-chart></app-chart>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="panel">
+          <div>
+            <app-card class="ui-card "></app-card>
+            <app-card class="ui-card "></app-card>
+            <app-card class="ui-card "></app-card>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="content-group">
+          <div class="head-group">
+            <label for="">Filtrar</label>
+          </div>
+          <div class="body-group">
+            <form action="">
+              <div class="form-group">
+                <label for=""><strong>Fecha</strong> <br> Inicial</label>
+                <app-calendar class="ui-calendar"></app-calendar>
+              </div>
+              <div class="form-group">
+                <label for=""> <strong></strong> <br>Final</label>
+                <app-calendar class="ui-calendar"></app-calendar>
+              </div>
+              <div class="form-group">
+                <label for=""><strong>Plazo</strong> <br> Desde</label>
+                <app-input-number class="input-number"></app-input-number>
+              </div>
+              <div class="form-group">
+                <label for=""><strong></strong> <br>Hasta</label>
+                <app-input-number class="input-number"></app-input-number>
+              </div>
+              <div class="form-group">
+                <label for=""><strong></strong> <br>Mercado</label>
+                <app-dropdownlist class="dropdown"></app-dropdownlist>
+              </div>
+              <div class="form-group">
+                <label for=""><strong></strong> <br><br>Cuenta CEDEVA</label>
+                <app-textbox class="textbox"></app-textbox>
+              </div>
+
+            </form>
+            <div class="btn-submit">
+              <app-buttons class="btn-ui btn-primario"></app-buttons>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <app-grid class='custom-grid'></app-grid>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <br>
+      </div>
+    </div>
+  </div>
+</section>

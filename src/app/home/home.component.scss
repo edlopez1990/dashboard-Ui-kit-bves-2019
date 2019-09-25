@@ -1,0 +1,112 @@
+.panel {
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  border: 0px;
+  background: transparent;
+
+  h1 {
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #5a5a5a;
+    text-align: center;
+  }
+
+  .block-green {
+    width: 338px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #bfebd1;
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #01973d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block-gray {
+    height: 40px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a8a8a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.content-group {
+  // height: 181px; 
+  border-radius: 5px;
+  border: solid 1px #dfdfdf;
+  background-color: #fbfbfc;
+  border-left: #01973d 6px solid;
+  margin: 10px 0px;
+
+  .head-group {
+    padding: 15px 10px;
+    border-bottom: solid 1px #dfdfdf;
+
+    label {
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 600;
+      color: #5a5a5a;
+    }
+  }
+
+  .body-group {
+    padding: 25px;
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .form-group {
+        margin: 5px;
+        width: calc(100% / 6);
+
+        label {
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #a8a8a8;
+
+          strong {
+            color: #5a5a5a;
+          }
+        }
+      }
+    }
+
+    .btn-submit {
+      text-align: right;
+    }
+  }
+}

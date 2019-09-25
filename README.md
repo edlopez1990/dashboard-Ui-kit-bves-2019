@@ -19,7 +19,35 @@ Execute this scripts in the order:
     const el = createCustomElement(AppComponent, { injector });
     customElements.define('micro-module-name', el);
   }
-
+  
   ngDoBootstrap() {}
   ``` 
 * Add and adapt needed scripts on `package.json`
+
+
+## Components Structure
+
+```
+.
+└── project
+    ├── package.json
+    ├── index.html
+    │── style.scss // All style and import style of the other components
+    │── README.md
+    └── app        // Al components 
+    │   ├── allcomponents // components syncfusion.js
+    │   │   
+    │   │── dashboard
+    │   │   
+    │   │── error
+    │   │   
+    │   ├── home
+    │   │   
+    │   ├── login
+    │   │   
+    │   └── components  // root component
+    │     ├── app-routing.module.ts // routs components
+    │     └── app.module.ts 
+    └── assets //img and style from individual components
+    
+```
