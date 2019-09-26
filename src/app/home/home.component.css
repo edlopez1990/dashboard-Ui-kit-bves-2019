@@ -1,0 +1,133 @@
+.panel {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 280px;
+  border: 0px;
+  background: transparent;
+}
+
+.panel h1 {
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+.panel .block-green {
+  width: 338px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #bfebd1;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #01973d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.panel .block-gray {
+  height: 40px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a8a8a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-group {
+  border-radius: 5px;
+  border: solid 1px #dfdfdf;
+  background-color: #fbfbfc;
+  border-left: #01973d 6px solid;
+  margin: 10px 0px;
+}
+
+.content-group .head-group {
+  padding: 15px 10px;
+  border-bottom: solid 1px #dfdfdf;
+}
+
+.content-group .head-group label {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.content-group .body-group {
+  padding: 25px;
+}
+
+.content-group .body-group form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-group .body-group form .form-group {
+  margin: 5px;
+  width: calc(100% / 6);
+}
+
+.content-group .body-group form .form-group label {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a8a8a8;
+}
+
+.content-group .body-group form .form-group label strong {
+  color: #5a5a5a;
+}
+
+.content-group .body-group .btn-submit {
+  text-align: right;
+}
+/*# sourceMappingURL=home.component.css.map */

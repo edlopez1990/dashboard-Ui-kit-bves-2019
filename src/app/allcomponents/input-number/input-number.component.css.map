@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "input-number.component.scss"
+    ],
+    "names": [],
+    "file": "input-number.component.css"
+}

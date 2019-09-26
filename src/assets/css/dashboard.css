@@ -48,6 +48,7 @@ section.dashboard .nav-mobile li a {
   width: 100%;
   height: 100%;
   text-decoration: none;
+  font-family: Lato;
 }
 
 section.dashboard .nav-mobile .menu-button {
@@ -229,7 +230,11 @@ section.dashboard header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 5%;
+  padding: 0px 0%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
 }
 
 section.dashboard header .column_one {
@@ -247,9 +252,6 @@ section.dashboard header .column_one ul {
 
 section.dashboard header .column_one img {
   width: 91px;
-  height: 28px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 section.dashboard header .column_two ul {
@@ -308,7 +310,7 @@ section.dashboard header .column_two ul li:nth-child(3) {
 }
 
 section.dashboard header .column_two ul li {
-  width: 74px;
+  width: 120px;
   height: 59px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +321,14 @@ section.dashboard header .column_two ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5a5a5a;
 }
 
 section.dashboard header .column_two ul li .bell {
@@ -384,6 +394,10 @@ section.dashboard section.market ul li .content {
 
 section.dashboard section.market ul li .content label {
   padding: 0px 10px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5a5a5a;
 }
 
 section.dashboard section.market ul li .circle {
@@ -391,5 +405,11 @@ section.dashboard section.market ul li .circle {
   height: 7px;
   background-color: #009444;
   border-radius: 100%;
+}
+
+section.dashboard .main {
+  margin-top: 59px;
+  position: relative;
+  z-index: 0;
 }
 /*# sourceMappingURL=dashboard.css.map */

@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-groupbuttons',
   template: `<!-- To render ButtonGroup. -->
              <div class='e-btn-group'>
-                <button ejs-button>Label</button>
-                <button ejs-button>Label</button>
+                <button ejs-button>Venta</button>
+                <button ejs-button class="active">Compra</button>
               </div>`,
   styleUrls: ['./groupbuttons.component.scss']
 })
