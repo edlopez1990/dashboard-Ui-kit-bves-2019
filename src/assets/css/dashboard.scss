@@ -290,11 +290,22 @@ section.dashboard {
           background-color: #ffffff;
         }
 
-        li:nth-child(5) {}
+        li:nth-child(4) {
+          img {
+            width: 43px;
+            height: 42px;
+            object-fit: contain;
+          }
+        }
+
+        li:nth-child(5) {
+          width: 120px;
+
+        }
 
 
         li {
-          width: 120px;
+          width: 74px;
           height: 59px;
           display: flex;
           align-items: center;
@@ -333,11 +344,15 @@ section.dashboard {
     }
   }
 
+  section.content-padd {
+    padding: 0px 3%;
+  }
+
   section.market {
     height: 51px;
     border-bottom: solid 1px #dfdfdf;
     background-color: #feffff;
-    padding: 0px 8%;
+
 
     ul {
       list-style: none;
@@ -383,5 +398,17 @@ section.dashboard {
     margin-top: 59px;
     position: relative;
     z-index: 0;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  section.dashboard {
+    section.market {
+      height: auto;
+
+      ul {
+        height: auto;
+      }
+    }
   }
 }

@@ -1,141 +1,342 @@
 <section class="dashboard">
-  <header>
-    <div class="column_one">
-      <div>
-        <ul class="nav-mobile">
-          <li class="menu-container">
-            <input id="menu-toggle" type="checkbox">
-            <label for="menu-toggle" class="menu-button">
-              <svg class="icon-open" viewBox="0 0 24 24">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-              </svg>
-              <svg class="icon-close" viewBox="0 0 100 100">
-                <path fill="#5a5a5a"
-                  d="M83.288 88.13c-2.114 2.112-5.575 2.112-7.69 0L53.66 66.188c-2.113-2.112-5.572-2.112-7.686 0l-21.72 21.72c-2.114 2.113-5.572 2.113-7.687 0l-4.693-4.692c-2.114-2.114-2.114-5.573 0-7.688l21.72-21.72c2.112-2.115 2.112-5.574 0-7.687L11.87 24.4c-2.114-2.113-2.114-5.57 0-7.686l4.842-4.842c2.113-2.114 5.57-2.114 7.686 0l21.72 21.72c2.114 2.113 5.572 2.113 7.688 0l21.72-21.72c2.115-2.114 5.574-2.114 7.688 0l4.695 4.695c2.112 2.113 2.112 5.57-.002 7.686l-21.72 21.72c-2.112 2.114-2.112 5.573 0 7.686L88.13 75.6c2.112 2.11 2.112 5.572 0 7.687l-4.842 4.84z" />
-              </svg>
-            </label>
-            <ul class="menu-sidebar">
-              <li><a class="nav-link register-custom" (click)="onTabClick(0)">HOME</a></li>
 
-              <li><a class="nav-link register-custom" (click)="onTabClick(1)">UI/KIT</a></li>
-              <li><a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a></li>
+
+
+  <div class="wrapper">
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Menú</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Opción 1</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Home 1</a>
+            </li>
+            <li>
+              <a href="#">Home 2</a>
+            </li>
+            <li>
+              <a href="#">Home 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Opción 2</a>
+        </li>
+        <li>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Opción 3</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(0)">HOME</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(1)">UI/KIT</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a>
+        </li>
+
+
+      </ul>
+
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <header>
+        <div class="column_one">
+          <div class="hamburguer-menu">
+            <button type="button" id="sidebarCollapse" class="btn ">
+              <i class="fas fa-align-left"></i>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-align-justify"></i>
+            </button>
+
+          </div>
+
+          <a (click)="onTabClick(0)">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="column_two">
+          <ul>
+            <li>
+              <div>
+                <label for="">09:45 am</label>
+                <label for="">Mar 13 agost 2019</label>
+              </div>
+            </li>
+            <li>
+
+              <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' cssClass="ui-tooltip-notification">
+                <ng-template #content>
+                  <div class="content-list">
+                    <div class="block-1">
+                      <ul class="list">
+                        <li>
+                          <div>
+                            <strong>First Notification</strong>
+                            <br>
+                            <label for="">Peticiones de Modificacion Pendiente</label>
+                            <hr>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>First Notification</strong>
+                            <br>
+                            <label for="">Peticiones de Modificacion Pendiente</label>
+                            <hr>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>First Notification</strong>
+                            <br>
+                            <label for="">Peticiones de Modificacion Pendiente</label>
+                            <hr>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>First Notification</strong>
+                            <br>
+                            <label for="">Peticiones de Modificacion Pendiente</label>
+                            <hr>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>First Notification</strong>
+                            <br>
+                            <label for="">Peticiones de Modificacion Pendiente</label>
+                            <hr>
+                          </div>
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+                    <div class="block-2">
+                      <ul class="all-list">
+                        <li>
+                          <a href="">Ver todas las Notificaciones </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </ng-template>
+                <img class="bell" src="./assets/img/bell.png" alt="">
+              </ejs-tooltip>
+            </li>
+            <li>
+
+
+              <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' cssClass="ui-tooltip-app">
+                <ng-template #content>
+                  <div class="">
+                    <ul class="list-tooltip-app">
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="list-tooltip-app">
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="list-tooltip-app">
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt=""></a>
+                          <br>
+                          <label for="">Nombre App</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </ng-template>
+                <img class="block" src="./assets/img/frame.png" alt="">
+              </ejs-tooltip>
+            </li>
+            <li>
+
+              <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' cssClass="ui-tooltip-logout">
+                <ng-template #content>
+                  <div class="content-user">
+                    <div class="block-1">
+                      <ul class="user">
+                        <li>
+                          <img src="./assets/img/ico-logo-emp.svg" alt="">
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Carlos Martinez</strong>
+                            <br>
+                            <label for="">Banco Atlántida</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <hr>
+                    </div>
+                    <div class="block-2">
+                      <ul class="user">
+                        <li>
+                          <img src="./assets/img/logout.svg" alt="">
+                        </li>
+                        <li>
+                          <a href="/login">
+                            <label for="">Cerrar Sesión</label>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </ng-template>
+                <img src=" ./assets/img/ico-logo-emp.svg" alt="">
+              </ejs-tooltip>
+            </li>
+            <li>
+              <label for="">Carlos Martinez</label>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+
+      <section class="main">
+
+        <div class="main-content">
+          <app-home *ngIf="tabIndex === 0"></app-home>
+          <app-uikit *ngIf="tabIndex === 1"></app-uikit>
+          <app-error *ngIf="tabIndex === 2"></app-error>
+        </div>
+
+        <div class="sidebar-right">
+          <div>
+            <ul>
               <li>
-                <input type="checkbox" id="sub-one" class="submenu-toggle">
-                <label class="submenu-label" for="sub-one">Category</label>
-                <div class="arrow right">&#8250;</div>
-                <ul class="menu-sub">
-                  <li class="menu-sub-title">
-                    <label class="submenu-label" for="sub-one">Back</label>
-                    <div class="arrow left">&#8249;</div>
-                  </li>
-                  <li><a href="#">item</a></li>
-                  <li><a href="#">item</a></li>
-                  <li><a href="#">item</a></li>
-                </ul>
+                <a href="" class="circle-blue">
+                  <img src="./assets/img/frame_white.svg" alt="">
+                </a>
               </li>
               <li>
-                <input type="checkbox" id="sub-two" class="submenu-toggle">
-                <label class="submenu-label" for="sub-two">Category</label>
-                <div class="arrow right">&#8250;</div>
-                <ul class="menu-sub">
-                  <li class="menu-sub-title">
-                    <label class="submenu-label" for="sub-two">Back</label>
-                    <div class="arrow left">&#8249;</div>
-                  </li>
-                  <li><a href="#">Sub-item</a></li>
-                  <li><a href="#">Sub-item</a></li>
-                  <li><a href="#">Sub-item</a></li>
-                  <li><a href="#">Sub-item</a></li>
-                </ul>
+                <a href="" class="circle-blue">
+                  <img src="./assets/img/frame_white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="" class="circle-blue">
+                  <img src="./assets/img/frame_white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="" class="circle-blue">
+                  <img src="./assets/img/frame_white.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="" class="circle-white">
+                  <img src="./assets/img/ico-cruz.svg" alt="">
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <svg class="icon-close" viewBox="0 0 100 100">
+                    <path fill="#5a5a5a"
+                      d="M83.288 88.13c-2.114 2.112-5.575 2.112-7.69 0L53.66 66.188c-2.113-2.112-5.572-2.112-7.686 0l-21.72 21.72c-2.114 2.113-5.572 2.113-7.687 0l-4.693-4.692c-2.114-2.114-2.114-5.573 0-7.688l21.72-21.72c2.112-2.115 2.112-5.574 0-7.687L11.87 24.4c-2.114-2.113-2.114-5.57 0-7.686l4.842-4.842c2.113-2.114 5.57-2.114 7.686 0l21.72 21.72c2.114 2.113 5.572 2.113 7.688 0l21.72-21.72c2.115-2.114 5.574-2.114 7.688 0l4.695 4.695c2.112 2.113 2.112 5.57-.002 7.686l-21.72 21.72c-2.112 2.114-2.112 5.573 0 7.686L88.13 75.6c2.112 2.11 2.112 5.572 0 7.687l-4.842 4.84z" />
+                  </svg>
+                </a>
               </li>
             </ul>
-          </li>
-        </ul>
-      </div>
-      <img src="./assets/img/logo.png" alt="">
-    </div>
-    <div class="column_two">
-      <ul>
-        <li>
-          <div>
-            <label for="">09:45 am</label>
-            <label for="">Mar 13 agost 2019</label>
           </div>
-        </li>
-        <li>
-          <img class="bell" src="./assets/img/bell.png" alt="">
-        </li>
-        <li>
-          <img class="block" src="./assets/img/frame.png" alt="">
-        </li>
-        <li>
-          <div class="circle">
-
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 footer">
+              <img src="./assets/img/logo-gris.png" alt="">
+              <p [innerHTML]="text"></p>
+            </div>
           </div>
-        </li>
-        <li>
-          <label for="">Carlos Martinez</label>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <section class="main">
+        </div>
+      </footer>
 
-    <div class="main-content">
-      <app-home *ngIf="tabIndex === 0"></app-home>
-      <app-uikit *ngIf="tabIndex === 1"></app-uikit>
-      <app-error *ngIf="tabIndex === 2"></app-error>
-    </div>
-
-    <div class="sidebar-right">
-      <div>
-        <ul>
-          <li>
-            <a href="" class="circle-blue">
-              <img src="./assets/img/frame_white.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="" class="circle-blue">
-              <img src="./assets/img/frame_white.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="" class="circle-blue">
-              <img src="./assets/img/frame_white.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="" class="circle-blue">
-              <img src="./assets/img/frame_white.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="" class="circle-white">
-              <img src="./assets/img/ico-cruz.svg" alt="">
-            </a>
-          </li>
-
-          <li>
-            <a href="">
-              <svg class="icon-close" viewBox="0 0 100 100">
-                <path fill="#5a5a5a"
-                  d="M83.288 88.13c-2.114 2.112-5.575 2.112-7.69 0L53.66 66.188c-2.113-2.112-5.572-2.112-7.686 0l-21.72 21.72c-2.114 2.113-5.572 2.113-7.687 0l-4.693-4.692c-2.114-2.114-2.114-5.573 0-7.688l21.72-21.72c2.112-2.115 2.112-5.574 0-7.687L11.87 24.4c-2.114-2.113-2.114-5.57 0-7.686l4.842-4.842c2.113-2.114 5.57-2.114 7.686 0l21.72 21.72c2.114 2.113 5.572 2.113 7.688 0l21.72-21.72c2.115-2.114 5.574-2.114 7.688 0l4.695 4.695c2.112 2.113 2.112 5.57-.002 7.686l-21.72 21.72c-2.112 2.114-2.112 5.573 0 7.686L88.13 75.6c2.112 2.11 2.112 5.572 0 7.687l-4.842 4.84z" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</section>
-<footer>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 footer">
-        <img src="./assets/img/logo-gris.png" alt="">
-        <p [innerHTML]="text"></p>
-      </div>
     </div>
   </div>
-</footer>
+</section>

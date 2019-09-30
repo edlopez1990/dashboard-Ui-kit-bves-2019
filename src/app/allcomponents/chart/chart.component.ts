@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-chart',
   template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [titleStyle]='titleStyle' width='650px' height='220px'>
+    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [titleStyle]='titleStyle' width='100%' height='220px'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' width=2 name='China' [marker]='marker'></e-series>
         </e-series-collection>

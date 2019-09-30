@@ -6,6 +6,8 @@
     width: calc(100% - 70px);
     padding-bottom: 50px;
     margin-right: 70px;
+
+
   }
 
   .sidebar-right {
@@ -50,4 +52,12 @@
       }
     }
   }
+}
+
+.hamburguer-menu {
+  width: 75px;
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

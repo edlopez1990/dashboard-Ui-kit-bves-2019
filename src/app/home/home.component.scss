@@ -21,7 +21,7 @@
   }
 
   .block-green {
-    width: 338px;
+    max-width: 338px;
     height: 40px;
     border-radius: 5px;
     background-color: #bfebd1;
@@ -37,6 +37,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 0px 5px;
+
+
   }
 
   .block-gray {
@@ -54,6 +58,7 @@
     justify-content: center;
   }
 
+
 }
 
 .content-group {
@@ -62,7 +67,7 @@
   border: solid 1px #dfdfdf;
   background-color: #fbfbfc;
   border-left: #01973d 6px solid;
-  margin: 10px 0px;
+  margin: 35px 0px;
 
   .head-group {
     padding: 15px 10px;
@@ -83,6 +88,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 90px;
 
       .form-group {
         margin: 5px;
@@ -109,4 +115,64 @@
       text-align: right;
     }
   }
+}
+
+@media only screen and (max-width: 980px) {
+
+
+
+  .panel {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .content-panel {
+      width: 100%;
+
+      .block-green {
+        display: block;
+
+        label,
+        strong {
+          display: block;
+          width: 100%;
+        }
+      }
+
+
+      .ui-card {
+        .e-card {
+          .e-card-header {
+            width: 30% !important;
+          }
+
+          .e-card-content {
+            width: 70% !important;
+          }
+        }
+      }
+    }
+
+
+
+
+  }
+
+
+  .content-group {
+    .body-group {
+      form {
+        display: block;
+        height: auto;
+
+        .form-group {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+
 }

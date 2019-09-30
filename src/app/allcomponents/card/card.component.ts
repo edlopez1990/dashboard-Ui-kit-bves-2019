@@ -6,7 +6,7 @@ import { Component, OnInit,ViewChild } from '@angular/core';
   <div tabindex="0" class="e-card" id="basic">
       <div class="e-card-header">
           <div class="e-card-header-caption">
-              <div class="e-card-title">Title</div>
+              <div class="e-card-title" [innerHTML]="text_title"></div>
           </div>
       </div>
       <div class="e-card-content">
@@ -18,7 +18,7 @@ import { Component, OnInit,ViewChild } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @ViewChild('element') element;
-
+  text_title = "09";
   constructor() { }
 
   ngOnInit() {
