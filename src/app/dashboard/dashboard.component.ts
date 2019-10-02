@@ -11,8 +11,9 @@ import { SafeHtml, DomSanitizer } from "@angular/platform-browser";
 //   ngOnInit() {}
 // }
 export class DashboardComponent {
-  tabIndex = 0 ;
+  
   text = "&nbsp &nbsp &nbsp Bolsa de Valores de El Salvador®. Todos los derechos reservado";
+  tabIndex = 0 ;
   onTabClick(index){
         this.tabIndex = index;
    }

@@ -5,7 +5,9 @@
         <ul>
           <li>
             <div class="content">
-              <img src="./assets/img/file-document-plus.svg" alt=""> <label for="">
+              <img *ngIf="tabIndex === 0" src="./assets/img/file-document-plus-orange.svg" alt="">
+              <img *ngIf="tabIndex === 1" src="./assets/img/file-document-plus.svg" alt="">
+              <label for="">
 
                 <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' class="ui-tooltip" cssClass="ui-tooltip">
                   <ng-template #content>
@@ -33,7 +35,8 @@
           </li>
           <li>
             <div class="content">
-              <img src="./assets/img/file-document.svg" alt="">
+              <img *ngIf="tabIndex === 0" src="./assets/img/file-document-orange.svg" alt="">
+              <img *ngIf="tabIndex === 1" src="./assets/img/file-document.svg" alt="">
               <label for="">
 
                 <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' class="ui-tooltip" cssClass="ui-tooltip">
@@ -100,12 +103,27 @@
       <div class="col-lg-4">
         <div class="panel">
           <div>
-            <app-groupbuttons class="groupbuttons-compra"></app-groupbuttons>
+            <div class="groupbuttons-venta" *ngIf="tabIndex === 0">
+              <div class='e-btn-group'>
+                <button ejs-button class="active" (click)="onTabClick(0)">Venta</button>
+                <button ejs-button (click)="onTabClick(1)">Compra</button>
+              </div>
+            </div>
+            <div class="groupbuttons-compra" *ngIf="tabIndex === 1">
+              <div class='e-btn-group'>
+                <button ejs-button (click)="onTabClick(0)">Venta</button>
+                <button ejs-button class="active" (click)="onTabClick(1)">Compra</button>
+              </div>
+            </div>
+
             <br>
             <br>
             <h1>Consulta de Operaciones</h1>
-            <div class="block-green">
+            <div class=" block-amount block-compra" *ngIf="tabIndex === 1">
               <label for="">Total de Compra:</label> <strong>$2436,049,4940</strong>
+            </div>
+            <div class="block-amount block-venta" *ngIf="tabIndex === 0">
+              <label for="">Total de venta:</label> <strong>$2436,049,4940</strong>
             </div>
 
             <div class="block-gray">
@@ -137,7 +155,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
-        <div class="content-group">
+        <div class="content-group" [class.content-group-border-left-venta]="tabIndex=='0'"
+          [class.content-group-border-left-compra]="tabIndex=='1'">
           <div class="head-group">
             <label for="">Filtrar</label>
           </div>
@@ -164,7 +183,7 @@
                 <app-dropdownlist class="dropdown"></app-dropdownlist>
               </div>
               <div class="form-group">
-                <label for=""><strong></strong> <br><br>Cuenta CEDEVA</label>
+                <label for=""><strong></strong> <br>Cuenta CEDEVA</label>
                 <app-textbox class="textbox"></app-textbox>
               </div>
 
