@@ -1504,6 +1504,18 @@ body {
 
   }
 
+
+  .ui-context-menu {}
+
+  .e-contextmenu-wrapper {
+    ul.e-contextmenu {
+      border: 1px solid #E2E2E2 !important;
+      border-radius: 5px 5px 5px 5px !important;
+      background-color: #FFFFFF !important;
+      box-shadow: none !important;
+    }
+  }
+
   // Import style project
   @import './assets/css/login.scss';
   @import './assets/css/error.scss';
@@ -1520,7 +1532,7 @@ body {
   // @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
   @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
   @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+  // @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
   @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
   @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
   @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
@@ -1555,6 +1567,4 @@ body {
       }
     }
   }
-
-
 }
