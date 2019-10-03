@@ -98,7 +98,7 @@ a {
 body {
 
 
-  // ui/kit class btn primeario
+  // 01 -ui/kit class btn primeario
 
   .btn-ui {
     button {
@@ -156,7 +156,7 @@ body {
   }
 
 
-  // ui/kit class btn secundario
+  // 02 - ui/kit class btn secundario
   .btn-secundario {
     button {
       background-color: #ffff !important;
@@ -206,7 +206,7 @@ body {
     }
   }
 
-  // ui/kit class btn primario venta
+  //03 - ui/kit class btn primario compra
   .btn-primario-compra {
     button {
       background-color: #FC7C05 !important;
@@ -255,7 +255,7 @@ body {
   }
 
 
-  // ui/kit class btn secundario
+  // 04 - ui/kit class btn secundario compra
   .btn-secundario-compra {
     button {
       background-color: #ffff !important;
@@ -305,7 +305,7 @@ body {
     }
   }
 
-  // ui/kit class btn primario venta
+  // 05 -  ui/kit class btn primario venta
   .btn-primario-venta {
     button {
       background-color: #00B147 !important;
@@ -354,7 +354,7 @@ body {
   }
 
 
-  // ui/kit class btn secundario
+  // 06 - ui/kit class btn secundario venta
   .btn-secundario-venta {
     button {
       background-color: #ffff !important;
@@ -407,7 +407,7 @@ body {
 
 
 
-  // ui/kit class bgroupbuttons
+  // 07 - ui/kit class bgroupbuttons
 
   .groupbuttons-primario {
     .e-btn-group {
@@ -441,6 +441,7 @@ body {
     }
   }
 
+  // 08 - ui / kit group buttons compra
   .groupbuttons-compra {
     .e-btn-group {
       border: 1px solid #00B147;
@@ -473,7 +474,7 @@ body {
     }
   }
 
-  // ui / kit group buttons
+  // 09 - ui/kit group buttons venta
   .groupbuttons-venta {
     .e-btn-group {
       border: 1px solid #FC7C05;
@@ -506,7 +507,7 @@ body {
     }
   }
 
-  //toggleswitch
+  //10 - ui/kit - toggleswitch
 
   .toggleswitch {
     .e-switch-wrapper {
@@ -545,7 +546,7 @@ body {
     }
   }
 
-  // ui/kit textbox
+  //11 - ui/kit textbox
   .textbox {
     .wrap {
       padding: 0px;
@@ -577,7 +578,7 @@ body {
     }
   }
 
-  //ui/kit Dropdown
+  //12 - ui/kit Dropdown
   .dropdown {
     label {
       font-family: Lato;
@@ -604,7 +605,7 @@ body {
     }
   }
 
-  // ui/kit Grid
+  // 13 - ui/kit Grid
   .custom-grid {
 
     .e-grid .e-headercell,
@@ -647,7 +648,7 @@ body {
     text-align: left;
   }
 
-  // ui/kit Input number
+  //14 - ui/kit Input number
   .input-number {
     .e-numeric {
       border: 1px solid #E2E2E2 !important;
@@ -661,7 +662,7 @@ body {
     }
   }
 
-  // ui/kit checkbox
+  // 15 - ui/kit checkbox
   .ui-checkbox {
     ul {
       list-style: none;
@@ -694,7 +695,7 @@ body {
     }
   }
 
-  // ui horizontal menu
+  // 16 - ui horizontal menu
   .ui-horizontal-menu {
     .e-menu-wrapper {
       // background-color: #FFFFFF;
@@ -714,7 +715,7 @@ body {
 
   }
 
-  // ui/kit vertical menu
+  // 17 - ui/kit vertical menu
   .ui-vertical-menu {
     .e-menu-wrapper {
       // background-color: #FFFFFF;
@@ -744,7 +745,7 @@ body {
     }
   }
 
-  // ui/kit card
+  //18 - ui/kit card
   .ui-card {
     .e-card {
       padding: 10px 20px;
@@ -785,7 +786,7 @@ body {
     }
   }
 
-  // ui/kit Tab
+  // 19 - ui/kit Tab
   .ui-tab {
     .e-tab {
       .e-content {
@@ -834,7 +835,7 @@ body {
     }
   }
 
-  // ui/kit Tooltip
+  //20 - ui/kit Tooltip
   .ui-tooltip {
     .tooltipContent {
       input {
@@ -847,7 +848,7 @@ body {
     }
   }
 
-  // ui/kit Toast
+  //21 - ui/kit Toast
   .ui-toast {
     button {
       background-color: #002B98 !important;
@@ -858,7 +859,7 @@ body {
     }
   }
 
-  // ui/kit Popup
+  //22 - ui/kit Popup
   .ui-popup {
     button#targetButton {
       background-color: #002B98 !important;
@@ -880,6 +881,7 @@ body {
     }
   }
 
+  // 23 - ui/kit Dialog
   .e-dialog {
     background-color: #FFFFFF;
     border: 1px solid #E2E2E2;
@@ -945,7 +947,7 @@ body {
 
   }
 
-  // ui/kit Slider
+  //24 -  ui/kit Slider
   .ui-slider {
     .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default {
       background-color: #002B98 !important;
@@ -991,7 +993,7 @@ body {
 
   }
 
-  // ui/kit Calendar
+  // 25 - ui/kit Calendar
   .ui-calendar {
     .e-datepicker {
       .e-input-group {
@@ -1005,7 +1007,7 @@ body {
     }
   }
 
-  // ui/kit Ui Chip
+  //26 - ui/kit Ui Chip
   .ui-chip {
     .e-chip {
       width: 113px;
@@ -1030,6 +1032,8 @@ body {
 
   .ui-calendar {}
 
+  // 27 - ui/kit calendar rangue
+
   .ui-calendar-rangue {
     // span.e-day {
     //   background-color: #002B98 !important;
@@ -1041,70 +1045,7 @@ body {
     margin-top: 0px !important;
   }
 
-  .wrap {
-
-    .e-input-group {}
-  }
-
-  .wrap[_ngcontent-c10] {
-    .e-input-group[_ngcontent-c10] {
-      // margin: 7px 0 !important;
-      // margin: 7px 0px 10px 0px !important;
-      margin: auto !important;
-    }
-  }
-
-  .wrap[_ngcontent-c10] .e-input-group[_ngcontent-c10] {
-    // margin: 7px 0 !important;
-    // margin: 7px 0px 10px 0px !important;
-    margin: auto !important;
-  }
-
-  .panel {
-    border-radius: 5px;
-    border: solid 1px #dfdfdf;
-    background-color: #fbfbfc;
-    margin: 10px 0px;
-
-    .panel-head {
-      height: 40px;
-      padding: 10px;
-    }
-  }
-
-  // Footer style
-  .footer {
-    height: 51px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    z-index: -1;
-    position: relative;
-    border-top: solid 1px #dfdfdf;
-
-    img {
-      width: 82px;
-      height: 34px;
-      object-fit: contain;
-      opacity: 0.4;
-    }
-
-    p {
-      // width: 276px;
-      height: 12px;
-      font-family: Lato;
-      font-size: 10px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #a8a8a8;
-      padding-left: 5%;
-      width: 100%;
-    }
-  }
-
+  //  28 - ui/kit tooltip
   .ui-tooltip {
     .e-btn {
       background: transparent;
@@ -1187,16 +1128,7 @@ body {
     color: #1d2f5f !important;
   }
 
-
-
-
-
-
-
-
-
-
-
+  //  28 - 01 - ui/kit tooltip app 
   .ui-tooltip-app {
 
     opacity: 1 !important;
@@ -1296,6 +1228,7 @@ body {
 
   }
 
+  // 28 - 01 - ui/kit tooltip logout 
   .ui-tooltip-logout {
 
     opacity: 1 !important;
@@ -1399,6 +1332,7 @@ body {
 
   }
 
+  // 28 - 01 - ui/kit tooltip Notification 
   .ui-tooltip-notification {
 
     opacity: 1 !important;
@@ -1522,38 +1456,7 @@ body {
     }
   }
 
-  // Import style project
-  @import './assets/css/login.scss';
-  @import './assets/css/error.scss';
-  @import './assets/css/dashboard.scss';
-
-  // Import style syncfusion
-  @import './assets/css/material.css';
-  @import './assets/css/material.scss';
-  // @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-
-
-
-  @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-  // @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-  // @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
-
-  @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
-
-
-  // @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
-  // @import '../node_modules/@syncfusion/ej2-angular-calendars/styles/material.css';
-
-
-  // dashboard panel - card
-
+  //29 dashboard panel - card
   .panel {
     .ui-card {
       .e-card {
@@ -1573,4 +1476,88 @@ body {
       }
     }
   }
+
+  .wrap {
+    .e-input-group {}
+  }
+
+  .wrap[_ngcontent-c10] {
+    .e-input-group[_ngcontent-c10] {
+      // margin: 7px 0 !important;
+      // margin: 7px 0px 10px 0px !important;
+      margin: auto !important;
+    }
+  }
+
+  .wrap[_ngcontent-c10] .e-input-group[_ngcontent-c10] {
+    // margin: 7px 0 !important;
+    // margin: 7px 0px 10px 0px !important;
+    margin: auto !important;
+  }
+
+  .panel {
+    border-radius: 5px;
+    border: solid 1px #dfdfdf;
+    background-color: #fbfbfc;
+    margin: 10px 0px;
+
+    .panel-head {
+      height: 40px;
+      padding: 10px;
+    }
+  }
+
+  // 30 -  Import style project
+  @import './assets/css/login.scss';
+  @import './assets/css/error.scss';
+  @import './assets/css/dashboard.scss';
+
+  // Import style syncfusion
+  @import './assets/css/material.css';
+  @import './assets/css/material.scss';
+  @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
+
+
+
+  // Footer style
+  .footer {
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: -1;
+    position: relative;
+    border-top: solid 1px #dfdfdf;
+
+    img {
+      width: 82px;
+      height: 34px;
+      object-fit: contain;
+      opacity: 0.4;
+    }
+
+    p {
+      // width: 276px;
+      height: 12px;
+      font-family: Lato;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a8a8a8;
+      padding-left: 5%;
+      width: 100%;
+    }
+  }
+
 }
