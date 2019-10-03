@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { areaData } from './datasource';
 
 @Component({
   selector: 'app-chart',
   template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [titleStyle]='titleStyle' width='100%' height='220px'>
-        <e-series-collection>
-            <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' width=2 name='China' [marker]='marker'></e-series>
-        </e-series-collection>
-    </ejs-chart>`,
+  `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [palettes]='palette' height="220px" width="100%">
+  <e-series-collection>
+      <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' fill='#69D2E7' opacity=0.6>
+      
+      </e-series>
+  </e-series-collection>
+</ejs-chart>`,
   styleUrls: ['./chart.component.scss']
 })
 export class ChartComponent implements OnInit {
@@ -15,26 +18,22 @@ export class ChartComponent implements OnInit {
   public primaryXAxis: Object;
   public chartData: Object[];
   public title: string;
-  public marker: Object;
-  public titleStyle: Object;
-  ngOnInit(): void {
-      this.chartData =  [
-    { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
-    { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
-    { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
-    { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
-    { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
-    { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
-];
-      this.primaryXAxis = {
-          valueType: 'Category',
-      };
-      this.marker = { visible: true, width: 10, height: 10 };
-      this.title = '';
-      this.titleStyle = {
-         size:'18px', color:'Red', textAlignment: 'Far', textOverflow: 'Wrap'
-      }
-  }
+  public primaryYAxis: Object;
+  public palette: string[];
 
+  ngOnInit(): void {
+      this.chartData = areaData;
+      this.primaryXAxis = {
+         title: 'Year',
+         minimum: 1900, maximum: 2000, interval: 10,
+         edgeLabelPlacement: 'Shift'
+      };
+      this.primaryYAxis = {
+         minimum: 2, maximum: 5, interval: 0.5,
+         title: 'Sales Amount in Millions'
+      };
+      this.title = 'Average Sales Comparison';
+      this.palette = ["#E94649", "#F6B53F", "#6FAAB0", "#C4C24A"];
+  }
 
 }

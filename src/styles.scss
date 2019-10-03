@@ -655,6 +655,10 @@ body {
       height: 44px !important;
       padding: 10px;
     }
+
+    .e-control {
+      min-height: 35px !important;
+    }
   }
 
   // ui/kit checkbox
@@ -989,13 +993,15 @@ body {
 
   // ui/kit Calendar
   .ui-calendar {
-    .e-input-group {
-      background-color: #FFFFFF;
-      border: 1px solid #E2E2E2 !important;
-      border-radius: 5px;
-      // max-width: 222px;
-      height: 44px;
-      padding: 5px;
+    .e-datepicker {
+      .e-input-group {
+        background-color: #FFFFFF !important;
+        border: 1px solid #E2E2E2 !important;
+        border-radius: 5px !important;
+        // max-width: 222px;
+        height: 44px !important;
+        padding: 5px !important;
+      }
     }
   }
 

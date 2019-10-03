@@ -61,11 +61,14 @@ import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
 import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './allcomponents/chart/chart.component';
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { CategoryService, LineSeriesService} from '@syncfusion/ej2-angular-charts';
+import { CategoryService, ScatterSeriesService, LineSeriesService,TrendlinesService} from '@syncfusion/ej2-angular-charts';
 
 
+import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService, 
+      DateTimeService, MultiColoredAreaSeriesService } from '@syncfusion/ej2-angular-charts';
+      // import {  ScatterSeriesService, LineSeriesService, DateTimeService, TrendlinesService} from '@syncfusion/ej2-angular-charts';
 
-
+      
 enableRipple(true);
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -74,7 +77,8 @@ enableRipple(true);
   providers: [PageService,
     SortService,
     FilterService,
-    GroupService,CategoryService, LineSeriesService],
+    GroupService,CategoryService, LineSeriesService,AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
+    DateTimeService, CategoryService, MultiColoredAreaSeriesService,TrendlinesService,ScatterSeriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
