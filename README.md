@@ -201,6 +201,203 @@ En Angular, la mejor práctica es cargar y configurar el enrutador en un módulo
 Una clase de módulo angular describe cómo encajan las partes de la aplicación. Cada aplicación tiene al menos un módulo angular, el módulo raíz que arranca para iniciar la aplicación. Puedes llamarlo como quieras. El nombre convencional es AppModule.
 
 
+## Como cargar un componente y utilizar los estilos nuevos
+
+#### Ejemplos
+
+##### Componente de Buttons
+
+Tomaremos el selector que esta ubicado dentro  de buttons.component.ts y copiaremos el selector el cual debe ser el selector: 'app-buttons' el cual colocaremos dentro de cualquier nuevo componente utilizando las clase creada para este componente, se puede analizar el componente de prueba mostrado en el ui/kit.
+
+
+
+```sh
+
+ <app-buttons class="btn-ui btn-primario"></app-buttons>
+
+ <app-buttons class="btn-ui btn-primario-venta"></app-buttons>
+
+ <app-buttons class="btn-ui btn-primario-compra"></app-buttons>
+
+```
+
+Usando las clases "btn-ui btn-primario" usados en los ejemplos del ui/kit, el uso de parametros esta aplicado a la documentación de angular 
+
+
+
+##### Componente de Textbox
+
+```sh
+
+ <app-textbox class="textbox"></app-textbox>
+
+```
+
+Usando las clases "textbox" usados en los ejemplos del ui/kit
+
+##### Componente de Dropdownlist
+
+```sh
+
+ <app-dropdownlist class="dropdown"></app-dropdownlist>
+
+```
+Usando las clases "dropdown" usados en los ejemplos del ui/kit
+
+
+##### Componente de Grid
+
+```sh
+
+ <app-grid class='custom-grid'></app-grid>
+
+```
+Usando las clases "custom-grid" usados en los ejemplos del ui/kit
+
+##### Componente de Calendar
+
+```sh
+
+ <app-calendar class="ui-calendar"></app-calendar>
+
+```
+Usando las clases "ui-calendar" usados en los ejemplos del ui/kit
+
+##### Componente de Calendar Range
+
+```sh
+
+ <app-calendar-range class="ui-calendar-rangue"></app-calendar-range>
+
+```
+Usando las clases "ui-calendar-rangue" usados en los ejemplos del ui/kit
+
+
+##### Componente de Calendar Range
+
+```sh
+
+ <app-input-number class="input-number"></app-input-number>
+
+```
+Usando las clases "input-number" usados en los ejemplos del ui/kit
+
+##### Componente de Checkbox
+
+```sh
+
+ <app-checkbox class="ui-checkbox"></app-checkbox>
+
+```
+
+Usando las clases "ui-checkbox" usados en los ejemplos del ui/kit
+
+##### Componente de Checkbox Frame
+
+```sh
+
+ <app-checkbox-frame class="ui-checkbox"></app-checkbox-frame>
+
+```
+ Usando las clases "ui-checkbox" usados en los ejemplos del ui/kit
+
+
+##### Componente de Slider
+
+```sh
+
+ <app-slider-limits class="ui-slider"></app-slider-limits>
+
+```
+Usando las clases "ui-slider" usados en los ejemplos del ui/kit
+
+##### Componente de Tooltip
+
+```sh
+
+ <app-tooltip class="ui-tooltip"></app-tooltip>
+
+```
+Usando las clases "ui-tooltip" usados en los ejemplos del ui/kit
+
+##### Componente de Card
+
+```sh
+
+  <app-card class="ui-card"></app-card>
+
+```
+Usando las clases "ui-card" usados en los ejemplos del ui/kit
+
+
+##### Componente de Acordion
+
+```sh
+
+   <app-acordion class="ui-acordion"></app-acordion>
+
+```
+Usando las clases "ui-acordion" usados en los ejemplos del ui/kit
+
+
+##### Componente de Tabs
+
+```sh
+
+   <app-tabs class="ui-tab"></app-tabs>
+
+```
+Usando las clases "ui-tab" usados en los ejemplos del ui/kit
+
+##### Componente de Menu Horizontal
+
+```sh
+
+  <app-menu class="ui-horizontal-menu"></app-menu>
+
+```
+Usando las clases "ui-horizontal-menu" usados en los ejemplos del ui/kit
+
+##### Componente de Menu Vertical
+
+```sh
+
+ <app-menu-vertical class="ui-vertical-menu"></app-menu-vertical>
+
+```
+Usando las clases "ui-vertical-menu" usados en los ejemplos del ui/kit
+
+
+##### Componente de Popup
+
+```sh
+
+ <app-popup class="ui-popup"></app-popup>
+
+```
+Usando las clases "ui-popup" usados en los ejemplos del ui/kit
+
+
+##### Componente de Context-menu
+
+```sh
+
+ <app-context-menu class="ui-context-menu" cssClass="ui-context-menu"></app-context-menu>
+
+```
+Usando las clases "ui-context-menu" usados en los ejemplos del ui/kit
+
+
+##### Componente de Chips
+
+```sh
+
+ <app-chips class="ui-chip"></app-chips>
+
+```
+Usando las clases "ui-chip" usados en los ejemplos del ui/kit
+
+
 ### Plugins
 
 Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
