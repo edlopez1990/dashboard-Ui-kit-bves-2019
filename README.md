@@ -51,7 +51,127 @@ Execute this scripts in the order:
   ``` 
 * Add and adapt needed scripts on `package.json`
 
+## Archivos a modificar luego de generar nuestro Micro-componente
 
+En este proyecto se crearon dos micro-componentes los cuales usaremos como componentes principales se podrán usar como componentes normales o micro-componentes, lo cual indefinidamente que usemos es lo mismo 
+
+dentro de nuestro proyecto tendremos una carpeta que la llamaremos "Projects"
+
+dentro de esta encontraremos dos componentes los cuales tienen la estructura normal de un proyecto de angular, nos dirigiremos a la carpeta "micro-one" y adentro encontraremos :
+
+- Template: Es el HTML o la capa de vista (o View Layout). Es lo que el usuario ve en el browser, imágenes, título, texto, vídeos, etc.
+Clase o Component: Es la lógica del Template. 
+
+- Es una Clase en TypeSript (al igual que los módulos Angular) y es a lo que comúnmente se llama el Componente. Esta clase contiene las propiedades (o datos) que estarán disponibles en la vista, además de contener la lógica necesaria para la Vista.
+
+- Metadata: Es un Decorador, al igual que los módulos Angular, que se decoraban con «@ngModule«, los Componentes se decoran con «@Component». Son datos extra necesarios para que Angular Binde (o «una») el Template con el Component. Además del decorador «@Component» existen otros más que decoran  los atributos de la Clase y los argumentos de los métodos.
+
+
+
+por defecto se te crea un componente llamado «App«; de hecho te crea la Clase, el Template, la hoja de estilos, y un archivo de test para ese componente en particular.
+
+
+
+- app.comonent.css: Es la hoja de estilos, en este archivo se agregan colores, márgenes, tamaño de texto, y todo lo referente a cómo se ven los componentes del archivo HTML (el Template). Este archivo viene por defecto cuando creamos un proyecto con angular-cli por si lo llegamos a necesitar ;)
+
+
+- app.component.html: Es el Template, o sea el HTML, la página que se ve en el browser. Si levantamos nuestra aplicación (con el comando ng serve) y la abrimos en nuestro browser, podemos ver que el browser entiende nuestro código HTML y lo convierte a lo que finalmente vemos en la pantalla.
+
+
+```
+.
+└── micro-one
+     └── app
+          │── app.component.css
+          │── app.component.html
+          │── app.component.ts 
+          └── app.module.ts 
+     
+```
+
+## Como invocar  un micro-componente dentro de la estructura de un proyecto en angular
+
+En la estructura de nuestro proyecto en el componente dashboard para ser mas precisos, agregaremos al dashboard.component.ts el siguiente codigo:
+
+```
+private loadScript(url: string): void {
+    
+
+  //Cargamos el escript que nos ayudara a mostrar a nuestros componentes 
+
+  if (document.querySelectorAll(`script[src='${url}']`).length === 0) {
+    const script = document.createElement('script');
+    script.onload = function () {
+      
+    };
+    script.src = url;
+    document.head.appendChild(script);
+  }
+}
+
+ public toggleMicroOne() {
+
+   //Componente compilado como un microcomponente de Login
+
+    this.loadScript('elements/micro-one.js');
+    this.toShow = this.sanitizer.bypassSecurityTrustHtml(`<micro-one>
+    <div class="loader-05"></div>
+    </micro-one>`);
+
+}
+
+public toggleMicroTwo() {
+  
+  //Componente compilado como un micro-componete de Error
+
+    this.loadScript('elements/micro-two.js');
+    this.toShow = this.sanitizer.bypassSecurityTrustHtml(`<micro-two>
+    <div class="loader-05"></div>
+    </micro-two>`);
+ 
+} 
+```
+
+La función onTabClick no permite cambiar o invocar el micro-componente en la vista actual, pocas palabras no sirve para hacer un switch 
+
+```
+onTabClick(index){
+  this.tabIndex = index;
+  if (index == 2) {
+    this.toggleMicroTwo();
+  }
+}
+```
+
+En el siguiente codigo vemos como invocamos  dos componentes normales (0 y 1) y un microcomponente  (2)
+
+
+
+```
+ <li>
+    <a class="nav-link register-custom" (click)="onTabClick(0)">HOME</a>
+ </li>
+ <li>
+    <a class="nav-link register-custom" (click)="onTabClick(1)">UI/KIT</a>
+ </li>
+ <li>
+    <a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a>
+ </li>
+```
+
+
+Luego se valida en el html cual de los componentes esta activo para poder mostra.
+```javascript
+ <app-home *ngIf="tabIndex === 0"></app-home>
+ <app-uikit *ngIf="tabIndex === 1"></app-uikit>
+ <div *ngIf="tabIndex === 2" [innerHTML]="toShow">
+```
+
+
+Se validara en este caso que el el componente seleccionado se el 2 (el que es un micro modulo) y se mostrara dentro del siguiente contenedor con la función "innerHTML"
+```javascript
+   <div *ngIf="tabIndex === 2" [innerHTML]="toShow">
+```
 ## Components Structure
 
 ```

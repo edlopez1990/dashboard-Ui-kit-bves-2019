@@ -278,9 +278,13 @@
       <section class="main">
 
         <div class="main-content">
+
+          <!-- <div [innerHTML]="toShow"></div> -->
           <app-home *ngIf="tabIndex === 0"></app-home>
           <app-uikit *ngIf="tabIndex === 1"></app-uikit>
-          <app-error *ngIf="tabIndex === 2"></app-error>
+          <div *ngIf="tabIndex === 2" [innerHTML]="toShow">
+
+          </div>
         </div>
 
         <div class="sidebar-right">
