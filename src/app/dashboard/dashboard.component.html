@@ -280,10 +280,18 @@
         <div class="main-content">
 
           <!-- <div [innerHTML]="toShow"></div> -->
+
+          <!-- Aqui es donde mostramos los componentes, dentro del main content-->
+
+          <!-- usamos la variable para validar "tabIndex"  si está en 0 mostrará el componente app-home, si es 1 mostrarâ el componente app-uikit y si es 2 mostrarâ dentro del div el contenido de nusestro micro modulo -->
+
+          <!-- Compoinentes -->
           <app-home *ngIf="tabIndex === 0"></app-home>
           <app-uikit *ngIf="tabIndex === 1"></app-uikit>
-          <div *ngIf="tabIndex === 2" [innerHTML]="toShow">
 
+          <!--Micro modulo-->
+          <div *ngIf="tabIndex === 2" [innerHTML]="toShow">
+            <!-- Fin main content-->
           </div>
         </div>
 

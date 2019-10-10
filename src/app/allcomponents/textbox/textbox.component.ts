@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `<div class="wrap">
     <div class="e-float-input e-input-group" >
         <input type="text" id="textBox1" 
-        #testTextBox1 (focus)="tb1Focused = true" (blur)="tb1Focused = false"/>
+        #testTextBox1 />
         <span class="e-float-line"></span>
     </div>
 </div>`,

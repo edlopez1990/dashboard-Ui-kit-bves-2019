@@ -11,7 +11,7 @@ enableRipple(true);
 })
 
 export class MenuComponent implements OnInit {
-  private menuItems: MenuItemModel[] = [
+   menuItems: MenuItemModel[] = [
     {
         text: 'File',
         iconCss: 'em-icons e-file',

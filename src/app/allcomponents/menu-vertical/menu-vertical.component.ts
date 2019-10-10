@@ -12,7 +12,7 @@ enableRipple(true);
   styleUrls: ['./menu-vertical.component.scss']
 })
 export class MenuVerticalComponent implements OnInit {
-  private menuItems: MenuItemModel[] = [
+   menuItems: MenuItemModel[] = [
     {
         text: 'File',
         items: [
