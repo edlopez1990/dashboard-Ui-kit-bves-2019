@@ -3,15 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "build:elements": "npm run build:micro-one && npm run build:micro-two",
     "build:micro-one": "ng build  micro-one --prod --output-hashing none && node ./projects/micro-one/build.js",
     "build:micro-two": "ng build  micro-two --prod --output-hashing none && node ./projects/micro-two/build.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "npm start"
+    "postinstall": "ng build --aot --prod",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
