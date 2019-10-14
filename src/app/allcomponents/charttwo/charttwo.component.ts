@@ -1,18 +1,19 @@
+
 import { Component, OnInit } from '@angular/core';
 import { areaData } from './datasource';
 
 @Component({
-  selector: 'app-chart',
+  selector: 'app-charttwo',
   template:
   `<ejs-chart  id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [palettes]='palette' height="220px" width="450px">
   <e-series-collection>
-      <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' fill='#01973d' opacity=0.6>
+      <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' fill='#f47200' opacity=0.6>
       
       </e-series>
   </e-series-collection>
 </ejs-chart>`
 })
-export class ChartComponent implements OnInit {
+export class CharttwoComponent implements OnInit {
 
   public primaryXAxis: Object;
   public chartData: Object[];
@@ -34,5 +35,6 @@ export class ChartComponent implements OnInit {
       this.title = '';
       this.palette = ["#E94649", "#F6B53F", "#6FAAB0", "#C4C24A"];
   }
+
 
 }

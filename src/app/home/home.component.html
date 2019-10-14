@@ -45,9 +45,16 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
-        <div class="panel">
+        <div class="panel" style="border: solid 1px #dfdfdf;">
           <div id="container">
-            <app-chart></app-chart>
+            <div *ngIf="tabIndex === 1">
+              <app-chart></app-chart>
+            </div>
+
+            <div *ngIf="tabIndex === 0">
+              <app-charttwo></app-charttwo>
+            </div>
+
           </div>
         </div>
       </div>

@@ -69,19 +69,20 @@ import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, Stack
 import { DetailComponent } from './detail/detail.component';
 import { MarketComponent } from './market/market.component';
 import { RegistryComponent } from './registry/registry.component';
+import { CharttwoComponent } from './allcomponents/charttwo/charttwo.component';
       // import {  ScatterSeriesService, LineSeriesService, DateTimeService, TrendlinesService} from '@syncfusion/ej2-angular-charts';
 
       
 enableRipple(true);
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent, CalendarComponent, CalendarRangeComponent, InputNumberComponent, InputTimeComponent, CheckboxComponent, CheckboxFrameComponent, SliderLimitsComponent, ChipsComponent, TooltipComponent, CardComponent, ToastComponent, AcordionComponent, TabsComponent, MenuComponent, PopupComponent, MenuVerticalComponent, ContextMenuComponent, HomeComponent, ChartComponent, DetailComponent, MarketComponent, RegistryComponent],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent, CalendarComponent, CalendarRangeComponent, InputNumberComponent, InputTimeComponent, CheckboxComponent, CheckboxFrameComponent, SliderLimitsComponent, ChipsComponent, TooltipComponent, CardComponent, ToastComponent, AcordionComponent, TabsComponent, MenuComponent, PopupComponent, MenuVerticalComponent, ContextMenuComponent, HomeComponent, ChartComponent, DetailComponent, MarketComponent, RegistryComponent, CharttwoComponent],
   imports: [ChartModule,ContextMenuModule,DialogModule,MenuModule,TabModule,AccordionModule,ToastModule,DatePickerModule,TooltipModule,ChipListModule,SliderModule,CheckBoxModule,FormsModule, NumericTextBoxModule,CalendarModule, TextBoxModule,DropDownListModule,SwitchModule,ButtonModule,GridModule,BrowserModule, AppRoutingModule, RouterModule.forRoot([])],
   providers: [PageService,
     SortService,
     FilterService,
     GroupService,CategoryService, LineSeriesService,AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-    DateTimeService, CategoryService, MultiColoredAreaSeriesService,TrendlinesService,ScatterSeriesService],
+    DateTimeService, MultiColoredAreaSeriesService,TrendlinesService,ScatterSeriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

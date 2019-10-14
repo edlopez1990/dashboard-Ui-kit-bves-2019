@@ -13,7 +13,7 @@ import { SafeHtml, DomSanitizer } from "@angular/platform-browser";
 export class DashboardComponent {
   
   text = "&nbsp &nbsp &nbsp Bolsa de Valores de El Salvador®. Todos los derechos reservado";
-  tabIndex = 4 ;
+  tabIndex = 0 ;
   onTabClick(index){
         this.tabIndex = index;
         if (index === 2) {
