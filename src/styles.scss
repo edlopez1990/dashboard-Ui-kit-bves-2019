@@ -146,7 +146,7 @@ body {
     font-family: Lato;
     font-size: 13px;
     margin: 0px 5px;
-    
+
   }
 
 
@@ -723,6 +723,15 @@ body {
   .custom-grid .e-grid .e-headercell,
   .custom-grid .e-grid .e-detailheadercell {
     padding: 17px 10px 17px 10px;
+  }
+
+  .e-grid .e-groupdroparea {
+    background-color: #fff !important;
+  }
+
+  .e-grid .e-groupdroparea.e-grouped {
+    background-color: #0037c1 !important;
+
   }
 
   .custom-grid.e-table,

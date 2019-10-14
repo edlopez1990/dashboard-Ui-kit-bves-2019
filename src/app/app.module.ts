@@ -13,7 +13,7 @@ import { UikitComponent } from './uikit/uikit.component';
 // import the GridModule for the Grid component
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { GridComponent } from './allcomponents/grid/grid.component';
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+import { PageService,EditService, SortService, ToolbarService,FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { ButtonsComponent } from './allcomponents/buttons/buttons.component';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { enableRipple } from '@syncfusion/ej2-base';
@@ -70,18 +70,22 @@ import { DetailComponent } from './detail/detail.component';
 import { MarketComponent } from './market/market.component';
 import { RegistryComponent } from './registry/registry.component';
 import { CharttwoComponent } from './allcomponents/charttwo/charttwo.component';
+import { GridtoolbarComponent } from './allcomponents/gridtoolbar/gridtoolbar.component';
       // import {  ScatterSeriesService, LineSeriesService, DateTimeService, TrendlinesService} from '@syncfusion/ej2-angular-charts';
 
-      
+
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
+import { GridtgroupingComponent } from './allcomponents/gridtgrouping/gridtgrouping.component';
+
 enableRipple(true);
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent, CalendarComponent, CalendarRangeComponent, InputNumberComponent, InputTimeComponent, CheckboxComponent, CheckboxFrameComponent, SliderLimitsComponent, ChipsComponent, TooltipComponent, CardComponent, ToastComponent, AcordionComponent, TabsComponent, MenuComponent, PopupComponent, MenuVerticalComponent, ContextMenuComponent, HomeComponent, ChartComponent, DetailComponent, MarketComponent, RegistryComponent, CharttwoComponent],
-  imports: [ChartModule,ContextMenuModule,DialogModule,MenuModule,TabModule,AccordionModule,ToastModule,DatePickerModule,TooltipModule,ChipListModule,SliderModule,CheckBoxModule,FormsModule, NumericTextBoxModule,CalendarModule, TextBoxModule,DropDownListModule,SwitchModule,ButtonModule,GridModule,BrowserModule, AppRoutingModule, RouterModule.forRoot([])],
+  declarations: [AppComponent, LoginComponent, ErrorComponent, DashboardComponent, UikitComponent, GridComponent, ButtonsComponent, GroupbuttonsComponent, SwitchComponent, TextboxComponent, DropdownlistComponent, CalendarComponent, CalendarRangeComponent, InputNumberComponent, InputTimeComponent, CheckboxComponent, CheckboxFrameComponent, SliderLimitsComponent, ChipsComponent, TooltipComponent, CardComponent, ToastComponent, AcordionComponent, TabsComponent, MenuComponent, PopupComponent, MenuVerticalComponent, ContextMenuComponent, HomeComponent, ChartComponent, DetailComponent, MarketComponent, RegistryComponent, CharttwoComponent, GridtoolbarComponent, GridtgroupingComponent],
+  imports: [ChartModule,ContextMenuModule,DialogModule,DatePickerAllModule,MenuModule,TabModule,AccordionModule,ToastModule,DatePickerModule,TooltipModule,ChipListModule,SliderModule,CheckBoxModule,FormsModule, NumericTextBoxModule,CalendarModule, TextBoxModule,DropDownListModule,SwitchModule,ButtonModule,GridModule,BrowserModule, AppRoutingModule, RouterModule.forRoot([])],
   providers: [PageService,
     SortService,
     FilterService,
-    GroupService,CategoryService, LineSeriesService,AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
+    GroupService,CategoryService,EditService,ToolbarService, LineSeriesService,AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
     DateTimeService, MultiColoredAreaSeriesService,TrendlinesService,ScatterSeriesService],
   bootstrap: [AppComponent]
 })

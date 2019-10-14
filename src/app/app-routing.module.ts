@@ -17,12 +17,8 @@ const routes: Routes = [
     component: ErrorComponent
   },
   {
-    path: "dashboard",
+    path: "home",
     component: DashboardComponent
-  },
-  {
-    path: "home",//Carga individual del componente Home
-    component: HomeComponent
   },
   {
     path: "uikit",
