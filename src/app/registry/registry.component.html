@@ -1,0 +1,275 @@
+<!-- Agregamos el parametro el cual nos hace saber el color que debemos mostrar dentro del market-->
+<app-market [tabIndex]="tabIndex"></app-market>
+<section class="breadcrumb">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+          <li>
+            <a href=""> Estado 1 </a><img src="../../assets/img/chevron-down.svg" alt="">
+          </li>
+          <li>
+            <a href=""> Estado 2</a><img src="../../assets/img/chevron-down.svg" alt="">
+          </li>
+          <li>
+            <a class="active" href=""> Pantalla de Detalle</a><img src="../../assets/img/chevron-down.svg" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detalle">
+  <div class="container">
+    <!-- Titulo -->
+    <div class="row titulo-detalle-registro">
+      <div class="col-lg-12">
+        <div class="block center-Justify">
+          <div class="content-block">
+            <h1>Consulta de operaciones</h1>
+            <h2>Crear Registro</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Fin titulo -->
+
+    <!-- Cuerpo detalle-->
+    <div class="row content-detail ">
+      <div class="col-lg-4">
+        <div class="row ">
+          <div class="col-lg-12">
+            <div class="text-middle-line-registry">
+              <h2><span>INFORMACIÓN GENERAL</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Usuario
+                </label>
+                <div class="wrap ui-textbox ">
+                  <div class="e-float-input e-input-group">
+                    <input type="text" id="textBox1" #testTextBox1 />
+                    <span class="e-float-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Compañia
+                </label>
+                <div>
+                  <ejs-dropdownlist class="ui-dropdown" id='ddlelement' [dataSource]='data' placeholder='Select '>
+                  </ejs-dropdownlist>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Tipo de mercado
+                </label>
+                <div class='e-btn-group groupbuttons-primario'>
+                  <button ejs-button>M2</button>
+                  <button ejs-button class="active"> M3 </button>
+                </div>
+              </div>
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Interversión de promotor
+                </label>
+                <div class='e-btn-group groupbuttons-primario'>
+                  <button ejs-button>SI</button>
+                  <button ejs-button class="active"> NO </button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Fecha de operación
+                </label>
+                <ejs-datepicker class="ui-calendar" format='yyyy-MM-dd' placeholder='Enter date' [value]=dateValue>
+                </ejs-datepicker>
+              </div>
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Plazo de operación (días)
+                </label>
+                <div class='wrap input-number'>
+                  <ejs-numerictextbox format='c2' value='10' placeholder='' floatLabelType='Auto'></ejs-numerictextbox>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="row ">
+          <div class="col-lg-12">
+            <div class="text-middle-line-registry">
+              <h2><span>INFORMACIÓN DEL CORREDOR</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 column-border">
+            <div class="row">
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Corredor
+                </label>
+                <div class="wrap ui-textbox ">
+                  <div class="e-float-input e-input-group">
+                    <input type="text" id="textBox1" #testTextBox1 />
+                    <span class="e-float-line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Título
+                </label>
+                <div class="wrap ui-textbox ">
+                  <div class="e-float-input e-input-group">
+                    <input type="text" id="textBox1" #testTextBox1 />
+                    <span class="e-float-line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Serie
+                </label>
+                <div class="wrap ui-textbox ">
+                  <div class="e-float-input e-input-group">
+                    <input type="text" id="textBox1" #testTextBox1 />
+                    <span class="e-float-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Precio
+                </label>
+                <div class='wrap input-number'>
+                  <ejs-numerictextbox format='c2' value='10' placeholder='' floatLabelType='Auto'></ejs-numerictextbox>
+                </div>
+              </div>
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Valor nominal
+                </label>
+                <div class='wrap input-number'>
+                  <ejs-numerictextbox format='c2' value='10' placeholder='' floatLabelType='Auto'></ejs-numerictextbox>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Moneda
+                </label>
+                <div>
+                  <ejs-dropdownlist class="ui-dropdown" id='ddlelement' [dataSource]='data' placeholder='Select '>
+                  </ejs-dropdownlist>
+                </div>
+              </div>
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Tasa de cambio
+                </label>
+                <div class='wrap input-number'>
+                  <ejs-numerictextbox format='c2' value='10' placeholder='' floatLabelType='Auto'></ejs-numerictextbox>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Valor Transado
+                </label>
+                <div class='wrap input-number'>
+                  <ejs-numerictextbox format='c2' value='10' placeholder='' floatLabelType='Auto'></ejs-numerictextbox>
+                </div>
+              </div>
+              <div class="col-lg-6 marg-separate-top-and-bottom">
+                <label for="">
+                  Comisión
+                </label>
+                <div class='wrap input-number'>
+                  <ejs-numerictextbox format='c2' value='10' placeholder='' floatLabelType='Auto'></ejs-numerictextbox>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="row ">
+          <div class="col-lg-12">
+            <div class="text-middle-line-registry">
+              <h2><span>INFORMACIÓN CLIENTE</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Cta. CEDEVAL
+                </label>
+                <div class="wrap ui-textbox ">
+                  <div class="e-float-input e-input-group">
+                    <input type="text" id="textBox1" #testTextBox1 />
+                    <span class="e-float-line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Código de Cliente
+                </label>
+                <div class="wrap ui-textbox ">
+                  <div class="e-float-input e-input-group">
+                    <input type="text" id="textBox1" #testTextBox1 />
+                    <span class="e-float-line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 marg-separate-top-and-bottom">
+                <label for="">
+                  Tipo de Cliente
+                </label>
+                <div>
+                  <ejs-dropdownlist class="ui-dropdown" id='ddlelement' [dataSource]='data' placeholder='Select '>
+                  </ejs-dropdownlist>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="content-button">
+                  <button ejs-button class="btn-ui btn-secundario" cssClass="e-link">Cancelar</button>
+                  <button class="btn-ui btn-primario" ejs-button cssClass="e-link">Crear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

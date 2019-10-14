@@ -1,102 +1,5 @@
-<section class="market content-padd">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <ul>
-          <li>
-            <div class="content">
-              <img *ngIf="tabIndex === 0" src="./assets/img/file-document-plus-orange.svg" alt="">
-              <img *ngIf="tabIndex === 1" src="./assets/img/file-document-plus.svg" alt="">
-              <label for="">
-
-                <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' class="ui-tooltip" cssClass="ui-tooltip">
-                  <ng-template #content>
-                    <div>
-                      <ul class="list-tooltip">
-                        <li>
-                          <label class="text-11" for="">Estado:</label> <label class="text-2" for="">Abierto</label>
-                        </li>
-                        <li>
-                          <label class="text-11" for="">Porcentaje de Comisión:</label>
-                          <label class="text-2" for="">12%</label>
-                        </li>
-                        <li>
-                          <label class="text-11" for="">Hora cierre:</label>
-                          <label class="text-2" for="">3:00 pm</label>
-                        </li>
-                      </ul>
-                    </div>
-                  </ng-template>
-                  <input ejs-button type="button" class="text" id="Title" value="Mercado Primario" />
-                </ejs-tooltip>
-              </label> <label for="">03:00 hr</label>
-              <div class="circle"></div>
-            </div>
-          </li>
-          <li>
-            <div class="content">
-              <img *ngIf="tabIndex === 0" src="./assets/img/file-document-orange.svg" alt="">
-              <img *ngIf="tabIndex === 1" src="./assets/img/file-document.svg" alt="">
-              <label for="">
-
-                <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' class="ui-tooltip" cssClass="ui-tooltip">
-                  <ng-template #content>
-                    <div>
-                      <ul class="list-tooltip">
-                        <li>
-                          <label class="text-11" for="">Estado:</label> <label class="text-2" for="">Abierto</label>
-                        </li>
-                        <li>
-                          <label class="text-11" for="">Porcentaje de Comisión:</label>
-                          <label class="text-2" for="">12%</label>
-                        </li>
-                        <li>
-                          <label class="text-11" for="">Hora cierre:</label>
-                          <label class="text-2" for="">3:00 pm</label>
-                        </li>
-                      </ul>
-                    </div>
-                  </ng-template>
-                  <input ejs-button type="button" class="text" id="Title" value="Mercado Primario" />
-                </ejs-tooltip>
-              </label> <label for="">03:00
-                hr</label>
-              <div class="circle"></div>
-            </div>
-          </li>
-          <li>
-            <div class="content">
-              <img src="./assets/img/earth.svg" alt=""> <label for="">
-                <ejs-tooltip #tooltip id="tooltip" position='BottomCenter' class="ui-tooltip" cssClass="ui-tooltip">
-                  <ng-template #content>
-                    <div>
-                      <ul class="list-tooltip">
-                        <li>
-                          <label class="text-11" for="">Estado:</label> <label class="text-2" for="">Abierto</label>
-                        </li>
-                        <li>
-                          <label class="text-11" for="">Porcentaje de Comisión:</label>
-                          <label class="text-2" for="">12%</label>
-                        </li>
-                        <li>
-                          <label class="text-11" for="">Hora cierre:</label>
-                          <label class="text-2" for="">3:00 pm</label>
-                        </li>
-                      </ul>
-                    </div>
-                  </ng-template>
-                  <input ejs-button type="button" class="text" id="Title" value="Mercado Primario" />
-                </ejs-tooltip>
-              </label> <label for="">03:00
-                hr</label>
-              <div class="circle"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Agregamos el parametro el cual nos hace saber el color que debemos mostrar dentro del market-->
+<app-market [tabIndex]="tabIndex"></app-market>
 <section class="content-padd">
   <div class="container-fluid">
     <div class="row">
@@ -113,7 +16,7 @@
               <div class='e-btn-group'>
                 <button ejs-button class="active" (click)="onTabClick(0)">Venta</button>
                 <!-- Aqui podemos cambiar el contenido del texto del Group Button-->
-                <button ejs-button>Compra</button>
+                <button ejs-button (click)="onTabClick(1)">Compra</button>
               </div>
             </div>
 
@@ -121,7 +24,7 @@
               <div class='e-btn-group'>
                 <button ejs-button (click)="onTabClick(0)">Venta</button>
                 <!-- Aqui podemos cambiar el contenido del texto del Group Button-->
-                <button ejs-button class="active">Compra</button>
+                <button ejs-button (click)="onTabClick(1)" class="active">Compra</button>
               </div>
             </div>
             <!-- Fin Group Button --->
@@ -164,8 +67,10 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
-        <div class="content-group" [ngClass]="{'content-group-border-left-venta': tabIndex==0}"
-          [ngClass]="{'class.content-group-border-left-compra': tabIndex==1}">
+
+        <!-- Validamos y mostramos el color elegido -->
+        <div
+          [className]="tabIndex == 0 ? ' content-group content-group-border-left-venta' : 'content-group content-group-border-left-compra'">
           <div class="head-group">
             <label for="">Filtrar</label>
           </div>
@@ -189,11 +94,11 @@
               </div>
               <div class="form-group">
                 <label for=""><strong></strong> <br>Mercado</label>
-                <app-dropdownlist class="dropdown"></app-dropdownlist>
+                <app-dropdownlist class="ui-dropdown"></app-dropdownlist>
               </div>
               <div class="form-group">
                 <label for=""><strong></strong> <br>Cuenta CEDEVA</label>
-                <app-textbox class="textbox"></app-textbox>
+                <app-textbox class="ui-textbox "></app-textbox>
               </div>
 
             </form>

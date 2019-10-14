@@ -26,11 +26,10 @@
   text-align: center;
 }
 
-.panel .block-green {
-  width: 338px;
+.panel .block-amount {
+  max-width: 338px;
   height: 40px;
   border-radius: 5px;
-  background-color: #bfebd1;
   font-family: Lato;
   font-size: 16px;
   font-weight: 600;
@@ -38,7 +37,6 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #01973d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +46,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0px 5px;
+}
+
+.panel .block-compra {
+  background-color: #bfebd1;
+  color: #01973d;
+}
+
+.panel .block-venta {
+  background-color: #f9d9bc;
+  color: #f47200;
 }
 
 .panel .block-gray {
@@ -75,8 +84,7 @@
   border-radius: 5px;
   border: solid 1px #dfdfdf;
   background-color: #fbfbfc;
-  border-left: #01973d 6px solid;
-  margin: 10px 0px;
+  margin: 35px 0px;
 }
 
 .content-group .head-group {
@@ -105,6 +113,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 90px;
 }
 
 .content-group .body-group form .form-group {
@@ -129,5 +138,47 @@
 
 .content-group .body-group .btn-submit {
   text-align: right;
+  margin: 14px 5px;
+}
+
+.content-group-border-left-compra {
+  border-left: #01973d 6px solid;
+}
+
+.content-group-border-left-venta {
+  border-left: #f47200 6px solid;
+}
+
+@media only screen and (max-width: 980px) {
+  .panel {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .panel .content-panel {
+    width: 100%;
+  }
+  .panel .content-panel .block-green {
+    display: block;
+  }
+  .panel .content-panel .block-green label,
+  .panel .content-panel .block-green strong {
+    display: block;
+    width: 100%;
+  }
+  .panel .content-panel .ui-card .e-card .e-card-header {
+    width: 30% !important;
+  }
+  .panel .content-panel .ui-card .e-card .e-card-content {
+    width: 70% !important;
+  }
+  .content-group .body-group form {
+    display: block;
+    height: auto;
+  }
+  .content-group .body-group form .form-group {
+    display: block;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=home.component.css.map */

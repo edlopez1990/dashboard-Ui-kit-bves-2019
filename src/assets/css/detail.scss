@@ -1,0 +1,233 @@
+.breadcrumb {
+  height: 46px;
+  background-color: #f8f8f8;
+  border-bottom: solid 1px #dfdfdf;
+
+  ul {
+    list-style: none;
+    margin-left: 3%;
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      a {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #5a5a5a;
+      }
+
+      a.active {
+        font-weight: bold;
+        color: #002b98;
+      }
+
+      a:after {
+        // content: url(../img/chevron-down.svg);
+        content: url("data:image/svg+xml;charset=UTF-8,<svg  width='24' height='24' fill='none' viewBox='0 0 24 24'><path fill='#A8A8A8' d='M8.58 16.59L13.17 12 8.58 7.41 10 6l6 6-6 6-1.42-1.41z'/></svg>");
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        margin: 0px 0px 0px 10px;
+        text-decoration: none;
+      }
+    }
+
+
+  }
+}
+
+.detalle {
+  margin: 50px 0px;
+
+  .titulo-detalle {
+    .block {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .block.right-Justify {
+      justify-content: flex-end;
+    }
+  }
+
+  .titulo-detalle-registro {
+    margin-bottom: 50px;
+
+
+    .block {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+    }
+
+    .block.center-Justify {
+      justify-content: center;
+    }
+  }
+
+  .block {
+    .content-block {
+      h1 {
+        font-family: Lato;
+        font-size: 28px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #5a5a5a;
+      }
+
+      h2 {
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #002b98;
+      }
+    }
+  }
+
+  .important-information {
+    ul {
+      list-style: none;
+      margin: 30px 0px 50px;
+
+      li {
+        display: inline-flex;
+        padding-right: 20px;
+
+        label {
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #a8a8a8;
+
+
+        }
+
+        strong {
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #444444;
+        }
+      }
+    }
+  }
+
+  .text-middle-line {
+    h2 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #dfdfdf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+
+
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: bold;
+      color: #002b98;
+    }
+
+    h2 span {
+      background: #fff;
+      padding: 0 10px;
+    }
+  }
+
+  .text-middle-line-registry {
+    h2 {
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid #dfdfdf;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+
+
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: bold;
+      color: #444444;
+    }
+
+    h2 span {
+      background: #fff;
+      padding: 0 0px;
+    }
+  }
+
+  .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    &>[class^="col-"],
+    &>[class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .column-border {
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+
+  .marg-separate-top-and-bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .content-detail {
+    label {
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #a8a8a8;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    strong {
+      font-family: Lato;
+      font-size: 15px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #444444;
+    }
+  }
+
+  .content-button {
+    text-align: right;
+  }
+}

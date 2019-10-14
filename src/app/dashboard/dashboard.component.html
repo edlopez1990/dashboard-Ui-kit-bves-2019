@@ -1,15 +1,10 @@
 <section class="dashboard">
-
-
-
   <div class="wrapper">
-
     <!-- Sidebar  -->
     <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar active">
       <div class="sidebar-header">
         <h3>Menú</h3>
       </div>
-
       <ul class="list-unstyled components">
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Opción 1</a>
@@ -50,6 +45,12 @@
         </li>
         <li>
           <a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(3)">Detalle</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(4)">Registro</a>
         </li>
       </ul>
 
@@ -285,14 +286,22 @@
 
           <!-- usamos la variable para validar "tabIndex"  si está en 0 mostrará el componente app-home, si es 1 mostrarâ el componente app-uikit y si es 2 mostrarâ dentro del div el contenido de nusestro micro modulo -->
 
-          <!-- Compoinentes -->
+          <!-- Component -->
           <app-home *ngIf="tabIndex === 0"></app-home>
           <app-uikit *ngIf="tabIndex === 1"></app-uikit>
+          <!-- Fin Component -->
 
           <!--Micro modulo-->
           <div *ngIf="tabIndex === 2" [innerHTML]="toShow">
-            <!-- Fin main content-->
           </div>
+          <!-- Fin Micro modulo-->
+
+          <!-- Component -->
+          <app-detail *ngIf="tabIndex === 3"></app-detail>
+          <app-registry *ngIf="tabIndex === 4"></app-registry>
+          <!-- Fin Component -->
+
+          <!-- Fin main content-->
         </div>
 
         <div class="sidebar-right">

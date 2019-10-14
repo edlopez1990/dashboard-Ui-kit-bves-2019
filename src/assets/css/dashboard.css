@@ -309,8 +309,19 @@ section.dashboard header .column_two ul li:nth-child(3) {
   background-color: #ffffff;
 }
 
-section.dashboard header .column_two ul li {
+section.dashboard header .column_two ul li:nth-child(4) img {
+  width: 43px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section.dashboard header .column_two ul li:nth-child(5) {
   width: 120px;
+}
+
+section.dashboard header .column_two ul li {
+  width: 74px;
   height: 59px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,11 +365,14 @@ section.dashboard header .column_two ul li .block {
      object-fit: contain;
 }
 
+section.dashboard section.content-padd {
+  padding: 0px 3%;
+}
+
 section.dashboard section.market {
   height: 51px;
   border-bottom: solid 1px #dfdfdf;
   background-color: #feffff;
-  padding: 0px 8%;
 }
 
 section.dashboard section.market ul {
@@ -411,5 +425,14 @@ section.dashboard .main {
   margin-top: 59px;
   position: relative;
   z-index: 0;
+}
+
+@media only screen and (max-width: 980px) {
+  section.dashboard section.market {
+    height: auto;
+  }
+  section.dashboard section.market ul {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=dashboard.css.map */

@@ -5,6 +5,7 @@ import { ErrorComponent } from "./error/error.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { UikitComponent } from "./uikit/uikit.component";
 import { HomeComponent } from "./home/home.component";
+import { DetailComponent } from "./detail/detail.component";
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "uikit",
     component: UikitComponent
+  },
+  {
+    path: "detail",
+    component: DetailComponent
   },
   {
     path: "",
