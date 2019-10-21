@@ -658,6 +658,7 @@ body {
     .e-input-group {
       input {
         border: 1px solid #E2E2E2 !important;
+        background-color: #fff;
       }
     }
   }
@@ -706,7 +707,7 @@ body {
     border: 1px solid #E2E2E2;
     border-radius: 5px;
     height: 44px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 
     span,
     input {
@@ -780,11 +781,12 @@ body {
     border-radius: 5px !important;
     height: 44px !important;
     padding: 10px;
+    background-color: #ffff !important;
   }
 
-  .e-control {
-    min-height: 35px !important;
-  }
+  // .e-control {
+  //   min-height: 35px !important;
+  // }
 
 
   // 15 - ui/kit checkbox
@@ -1657,6 +1659,29 @@ body {
       height: 40px;
       padding: 10px;
     }
+  }
+
+
+  .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+  .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after {
+    height: 0px !important;
+  }
+
+  .e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+  .e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+  .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+  .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
+  .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
+  .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+    height: 0px !important;
   }
 
   // 30 -  Import style project
