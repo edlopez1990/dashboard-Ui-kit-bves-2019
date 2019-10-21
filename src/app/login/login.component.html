@@ -33,7 +33,11 @@
               </div>
 
               <div class="form-group">
-                <a href="/home" class="btn-envio">Ingresar</a>
+                <!-- <button onclick="location.href = '/home';" class="btn-envio">Ingresar</button> -->
+                <button (click)="goToPage('/home', 123)" class="btn-envio">Ingresar</button>
+
+
+                <!-- <a href="/home" class="btn-envio" >Ingresar</a> -->
               </div>
             </form>
           </div>
