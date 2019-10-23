@@ -19,6 +19,9 @@ export class DashboardComponent {
         if (index === 2) {
           this.toggleMicroTwo();
         }
+
+        // cierro el sidebar al dar click en algun link de la pagina
+        this.toggle_sidebar();
    }
    title = 'micro-front';
 
@@ -27,6 +30,15 @@ export class DashboardComponent {
   constructor(private sanitizer: DomSanitizer) {
   }
 
+  // agrego una variable para validar y poder control sobre el toggle del sidebar
+  status: boolean = true;
+  // Agregamos una funcion en la cual validaremos el estado del sidebar , esta funcion se debe de agregar en el evento (click) para que se cierre automaticamente
+    toggle_sidebar(){
+      // valido que entra a la funcion
+      this.status = !this.status;  
+      // veo que este realizando el cambio de estado
+      console.log(this.status);  
+  }
   private loadScript(url: string): void {
     
 

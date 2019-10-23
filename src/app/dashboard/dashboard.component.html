@@ -1,7 +1,9 @@
 <section class="dashboard">
   <div class="wrapper">
     <!-- Sidebar  -->
-    <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar active">
+
+    <!-- aqui hare el toggle de la clase para poder expandir el sidebar -->
+    <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar " [ngClass]="status ? 'active' : ''">
       <div class="sidebar-header">
         <h3>Menú</h3>
       </div>
@@ -58,13 +60,15 @@
     </nav>
 
     <!-- Page Content  -->
-    <div id="content" class="active">
+    <!-- aqui hare el toggle de la clase para poder expandir el sidebar -->
+    <div id="content" [ngClass]="status ? 'active' : ''"> >
       <header>
         <div class="column_one">
           <div class="hamburguer-menu">
-            <button type="button" id="sidebarCollapse" class="btn ">
+            <button type="button" id="sidebarCollapse" (click)="toggle_sidebar()" class="btn">
               <i class="fas fa-align-left"></i>
             </button>
+
             <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
