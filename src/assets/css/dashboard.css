@@ -427,6 +427,66 @@ section.dashboard .main {
   z-index: 0;
 }
 
+section.dashboard .content-group {
+  border-radius: 5px;
+  background-color: #fbfbfc;
+  margin: 35px 0px;
+}
+
+section.dashboard .content-group .head-group {
+  padding: 15px 10px;
+  border-bottom: solid 1px #dfdfdf;
+}
+
+section.dashboard .content-group .head-group label {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+section.dashboard .content-group .body-group {
+  padding: 25px;
+}
+
+section.dashboard .content-group .body-group form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+}
+
+section.dashboard .content-group .body-group form .form-group {
+  margin: 5px;
+  width: calc(100% / 6);
+}
+
+section.dashboard .content-group .body-group form .form-group label {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a8a8a8;
+}
+
+section.dashboard .content-group .body-group form .form-group label strong {
+  color: #5a5a5a;
+}
+
+section.dashboard .content-group .body-group .btn-submit {
+  text-align: right;
+  margin: 14px 5px;
+}
+
 @media only screen and (max-width: 980px) {
   section.dashboard section.market {
     height: auto;

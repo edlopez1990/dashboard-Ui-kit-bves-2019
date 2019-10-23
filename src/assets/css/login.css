@@ -134,7 +134,7 @@ section.main-login .block .content-login form .form-group .form-control {
   background-color: #ffffff;
 }
 
-section.main-login .block .content-login form .form-group a.btn-envio {
+section.main-login .block .content-login form .form-group .btn-envio {
   width: 262px;
   height: 47px;
   border-radius: 5px;

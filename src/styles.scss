@@ -132,7 +132,8 @@ a {
 // - 28 - 01 - ui/kit tooltip app
 // - 28 - 02 - ui/kit tooltip logout 
 // - 28 - 03 - ui/kit tooltip Notification 
-// - 30 -  Import style project
+// - 30 - ui/kit Label gray and black 
+// - 31 -  Import style project
 
 body {
 
@@ -162,12 +163,14 @@ body {
   .btn-primario:hover button {
     background-color: #042476 !important;
     border-radius: 5px !important;
+    color: #fff !important;
   }
 
   button.btn-primario:focus,
   .btn-primario:focus button {
     background-color: #002B98 !important;
     border-radius: 5px !important;
+    color: #fff !important;
   }
 
 
@@ -220,6 +223,7 @@ body {
   .btn-secundario button:focus {
     background-color: #002B98 !important;
     border-radius: 5px !important;
+    color: #fff !important;
   }
 
   button.btn-secundario {
@@ -239,6 +243,7 @@ body {
   button.btn-secundario:focus {
     background-color: #002B98 !important;
     border-radius: 5px !important;
+    color: #fff !important;
   }
 
 
@@ -353,6 +358,7 @@ body {
   .btn-secundario-compra button:focus {
     background-color: #FC7C05 !important;
     border-radius: 5px !important;
+    color: #fff !important;
   }
 
 
@@ -413,6 +419,7 @@ body {
   .btn-primario-venta button:focus {
     background-color: #00B147 !important;
     border-radius: 5px !important;
+    color: #fff !important;
   }
 
   button.btn-primario-venta-hover,
@@ -467,6 +474,7 @@ body {
   .btn-secundario-venta button:focus {
     background-color: #00B147 !important;
     border-radius: 5px !important;
+    color: #fff !important;
   }
 
 
@@ -1634,6 +1642,20 @@ body {
     }
   }
 
+  //30  ui/kit Label gray and black 
+  .ui-label-gray {
+    font-family: Lato;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #a8a8a8 !important;
+  }
+
+  .ui-label-black {
+    font-family: Lato;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #5a5a5a !important;
+  }
 
   .wrap[_ngcontent-c10] {
     .e-input-group[_ngcontent-c10] {
@@ -1684,7 +1706,7 @@ body {
     height: 0px !important;
   }
 
-  // 30 -  Import style project
+  // 31 -  Import style project
   @import './assets/css/login.scss';
   @import './assets/css/error.scss';
   @import './assets/css/dashboard.scss';
