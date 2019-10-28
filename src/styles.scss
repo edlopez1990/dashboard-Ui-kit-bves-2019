@@ -167,6 +167,7 @@ body {
   }
 
 
+
   button.btn-primario-hover,
   .btn-primario-hover button {
     background-color: #042476 !important;
@@ -176,6 +177,15 @@ body {
   }
 
 
+  button.btn-primario-focus,
+  .btn-primario-focus button {
+
+    background-color: #002B98 !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+
+  }
 
   button.btn-primario-disable,
   .btn-primario-disable button {
@@ -204,6 +214,7 @@ body {
   }
 
 
+
   button.btn-secundario {
     background-color: #ffff !important;
     border: 1px solid #0230A6 !important;
@@ -220,13 +231,23 @@ body {
 
 
 
-
   button.btn-secundario-hover,
   .btn-secundario-hover button {
 
     background-color: #042476 !important;
     border-radius: 5px !important;
     color: #fff !important;
+    border-radius: 5px !important;
+
+  }
+
+  button.btn-secundario-focus,
+  .btn-secundario-focus button {
+
+    background-color: #ffff !important;
+    border: 1px solid #0230A6 !important;
+    border-radius: 5px !important;
+    color: #0230A6 !important;
     border-radius: 5px !important;
 
   }
@@ -241,6 +262,15 @@ body {
 
   }
 
+  button.btn-secundario-active,
+  .btn-secundario-active button {
+
+    background-color: #042476 !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+
+  }
 
   //03 - ui/kit class btn primario compra
   button.btn-primario-compra,
@@ -253,16 +283,11 @@ body {
 
   }
 
-
-
-  button.btn-primario-compra:active,
-  .btn-primario-compra button:active {
-
-    background-color: #FC7C05 !important;
+  button.btn-primario-compra:hover,
+  .btn-primario-compra button:hover {
+    background-color: #ED923E !important;
     border-radius: 5px !important;
     color: #fff !important;
-    text-decoration: none !important;
-
   }
 
 
@@ -278,12 +303,30 @@ body {
 
   }
 
+  button.btn-primario-compra-focus,
+  btn-primario-compra-focus button {
+    background-color: #FC7C05 !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+  }
+
   button.btn-primario-compra-disable,
   btn-primario-compra-disable button {
 
     text-decoration: none !important;
     color: #7695A4 !important;
     background-color: #EBEBEB !important;
+    border-radius: 5px !important;
+
+  }
+
+  button.btn-primario-compra-active,
+  btn-primario-compra-active button {
+
+    background-color: #ED923E !important;
+    border-radius: 5px !important;
+    color: #fff !important;
     border-radius: 5px !important;
 
   }
@@ -319,6 +362,27 @@ body {
 
   }
 
+  button.btn-secundario-compra-focus,
+  .btn-secundario-compra-focus button {
+
+    background-color: #ffff !important;
+    border: 1px solid #FC7C05 !important;
+    border-radius: 5px !important;
+    color: #FC7C05 !important;
+    border-radius: 5px !important;
+
+  }
+
+  button.btn-secundario-compra-active,
+  .btn-secundario-compra-active button {
+
+    background-color: #ffff !important;
+    border: 1px solid #FC7C05 !important;
+    border-radius: 5px !important;
+    color: #FC7C05 !important;
+    text-decoration: none !important;
+  }
+
   button.btn-secundario-compra-disable,
   btn-secundario-compra-disable button {
 
@@ -346,7 +410,6 @@ body {
   }
 
 
-
   button.btn-primario-venta-hover,
   .btn-primario-venta-hover button {
 
@@ -357,7 +420,23 @@ body {
 
   }
 
+  button.btn-primario-venta-focus,
+  .btn-primario-venta-focus button {
 
+    background-color: #00B147 !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+
+  }
+
+  button.btn-primario-venta-active,
+  .btn-primario-venta-active button {
+    background-color: #00B147 !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
 
   button.btn-primario-venta-disable,
   .btn-primario-venta-disable button {
@@ -388,6 +467,7 @@ body {
   }
 
 
+
   button.btn-secundario-venta-hover,
   .btn-secundario-venta-hover button {
 
@@ -398,6 +478,16 @@ body {
 
   }
 
+  button.btn-secundario-venta-focus,
+  .btn-secundario-venta-focus button {
+
+    background-color: #ffff !important;
+    border: 1px solid #00B147 !important;
+    border-radius: 5px !important;
+    color: #00B147 !important;
+    border-radius: 5px !important;
+
+  }
 
   button.btn-secundario-venta-disable,
   .btn-secundario-venta-disable button {
@@ -409,6 +499,14 @@ body {
 
   }
 
+  button.btn-secundario-venta-active,
+  .btn-secundario-venta-active button {
+    background-color: #ffff !important;
+    border: 1px solid #00B147 !important;
+    border-radius: 5px !important;
+    color: #00B147 !important;
+    text-decoration: none !important;
+  }
 
 
 
