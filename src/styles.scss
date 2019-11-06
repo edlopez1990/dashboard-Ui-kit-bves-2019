@@ -1745,14 +1745,29 @@ body {
 
 
   // Footer style
+
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  body {
+    margin: 0;
+    margin-bottom: 51px;
+  }
+
   .footer {
     height: 51px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     z-index: -1;
-    position: relative;
+
     border-top: solid 1px #dfdfdf;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     img {
       width: 82px;
