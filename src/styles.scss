@@ -1754,6 +1754,14 @@ body {
   body {
     margin: 0;
     margin-bottom: 51px;
+
+    .mCSB_inside>.mCSB_container {
+      margin-right: 0px !important;
+    }
+
+    .mCSB_container {
+      margin-right: 0px !important;
+    }
   }
 
   .footer {

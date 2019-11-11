@@ -1,1 +1,8 @@
 node_modules/
+src/assets/css/dashboard.css.map
+
+src/assets/css/dashboard.css
+
+src/app/dashboard/dashboard.component.css.map
+
+src/app/dashboard/dashboard.component.css

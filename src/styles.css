@@ -251,13 +251,6 @@ body .btn-primario:hover button {
   color: #fff !important;
 }
 
-body button.btn-primario:focus,
-body .btn-primario:focus button {
-  background-color: #002B98 !important;
-  border-radius: 5px !important;
-  color: #fff !important;
-}
-
 body button.btn-primario-hover,
 body .btn-primario-hover button {
   background-color: #042476 !important;
@@ -296,12 +289,6 @@ body .btn-secundario button:hover {
   color: #fff !important;
 }
 
-body .btn-secundario button:focus {
-  background-color: #002B98 !important;
-  border-radius: 5px !important;
-  color: #fff !important;
-}
-
 body button.btn-secundario {
   background-color: #ffff !important;
   border: 1px solid #0230A6 !important;
@@ -312,12 +299,6 @@ body button.btn-secundario {
 
 body button.btn-secundario:hover {
   background-color: #042476 !important;
-  border-radius: 5px !important;
-  color: #fff !important;
-}
-
-body button.btn-secundario:focus {
-  background-color: #002B98 !important;
   border-radius: 5px !important;
   color: #fff !important;
 }
@@ -347,6 +328,14 @@ body .btn-secundario-disable button {
   border-radius: 5px !important;
 }
 
+body button.btn-secundario-active,
+body .btn-secundario-active button {
+  background-color: #042476 !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+}
+
 body button.btn-primario-compra,
 body .btn-primario-compra button {
   background-color: #FC7C05 !important;
@@ -355,17 +344,11 @@ body .btn-primario-compra button {
   text-decoration: none !important;
 }
 
-body button.btn-primario-compra,
-body .btn-primario-compra:hover button:hover {
+body button.btn-primario-compra:hover,
+body .btn-primario-compra button:hover {
   background-color: #ED923E !important;
   border-radius: 5px !important;
   color: #fff !important;
-}
-
-body button.btn-primario-compra,
-body .btn-primario-compra:focus button:focus {
-  background-color: #FC7C05 !important;
-  border-radius: 5px !important;
 }
 
 body button.btn-primario-compra-hover,
@@ -392,6 +375,14 @@ body btn-primario-compra-disable button {
   border-radius: 5px !important;
 }
 
+body button.btn-primario-compra-active,
+body btn-primario-compra-active button {
+  background-color: #ED923E !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+}
+
 body button.btn-secundario-compra,
 body .btn-secundario-compra button {
   background-color: #ffff !important;
@@ -406,13 +397,6 @@ body .btn-secundario-compra button:hover {
   background-color: #FC7C05 !important;
   color: #fff !important;
   border-radius: 5px !important;
-}
-
-body button.btn-secundario-compra:focus,
-body .btn-secundario-compra button:focus {
-  background-color: #FC7C05 !important;
-  border-radius: 5px !important;
-  color: #fff !important;
 }
 
 body button.btn-secundario-compra-hover,
@@ -430,6 +414,15 @@ body .btn-secundario-compra-focus button {
   border-radius: 5px !important;
   color: #FC7C05 !important;
   border-radius: 5px !important;
+}
+
+body button.btn-secundario-compra-active,
+body .btn-secundario-compra-active button {
+  background-color: #ffff !important;
+  border: 1px solid #FC7C05 !important;
+  border-radius: 5px !important;
+  color: #FC7C05 !important;
+  text-decoration: none !important;
 }
 
 body button.btn-secundario-compra-disable,
@@ -455,13 +448,6 @@ body .btn-primario-venta button:hover {
   color: #fff !important;
 }
 
-body button.btn-primario-venta:focus,
-body .btn-primario-venta button:focus {
-  background-color: #00B147 !important;
-  border-radius: 5px !important;
-  color: #fff !important;
-}
-
 body button.btn-primario-venta-hover,
 body .btn-primario-venta-hover button {
   background-color: #25BA61 !important;
@@ -476,6 +462,14 @@ body .btn-primario-venta-focus button {
   border-radius: 5px !important;
   color: #fff !important;
   border-radius: 5px !important;
+}
+
+body button.btn-primario-venta-active,
+body .btn-primario-venta-active button {
+  background-color: #00B147 !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 body button.btn-primario-venta-disable,
@@ -502,13 +496,6 @@ body .btn-secundario-venta button:hover {
   border-radius: 5px !important;
 }
 
-body button.btn-secundario-venta:focus,
-body .btn-secundario-venta button:focus {
-  background-color: #00B147 !important;
-  border-radius: 5px !important;
-  color: #fff !important;
-}
-
 body button.btn-secundario-venta-hover,
 body .btn-secundario-venta-hover button {
   background-color: #25BA61 !important;
@@ -532,6 +519,15 @@ body .btn-secundario-venta-disable button {
   color: #7695A4 !important;
   background-color: #EBEBEB !important;
   border-radius: 5px !important;
+}
+
+body button.btn-secundario-venta-active,
+body .btn-secundario-venta-active button {
+  background-color: #ffff !important;
+  border: 1px solid #00B147 !important;
+  border-radius: 5px !important;
+  color: #00B147 !important;
+  text-decoration: none !important;
 }
 
 body .groupbuttons-primario.e-btn-group,
@@ -1137,10 +1133,10 @@ body .ui-tooltip.e-tooltip-wrap {
   border: 1px solid #1d2f5f !important;
   opacity: 0.9 !important;
   border-radius: 5px !important;
-  background-color: transparent !important;
   min-width: 185px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0230A6), to(#02072F)) !important;
   background-image: linear-gradient(180deg, #0230A6 0%, #02072F 100%) !important;
+  background-color: transparent !important;
 }
 
 body .ui-tooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
@@ -1188,10 +1184,14 @@ body .ui-tooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-right {
   color: #1d2f5f !important;
 }
 
+body .ui-tooltip-app.e-popup {
+  background-color: #fff !important;
+}
+
 body .ui-tooltip-app {
   opacity: 1 !important;
   border-radius: 5px !important;
-  background-color: #ffff !important;
+  background-color: #fff !important;
   min-width: 243px;
   -webkit-box-shadow: -20px 14px 24px 0 rgba(0, 0, 0, 0.05) !important;
           box-shadow: -20px 14px 24px 0 rgba(0, 0, 0, 0.05) !important;
@@ -1291,6 +1291,10 @@ body .ui-tooltip-app .e-arrow-tip-inner.e-tip-left {
 body .ui-tooltip-app .e-arrow-tip-inner.e-tip-right {
   border-left-color: #dfdfdf !important;
   color: #fff !important;
+}
+
+body .ui-tooltip-logout.e-popup {
+  background-color: #fff !important;
 }
 
 body .ui-tooltip-logout {
@@ -1395,6 +1399,10 @@ body .ui-tooltip-logout .e-arrow-tip-inner.e-tip-left {
 body .ui-tooltip-logout .e-arrow-tip-inner.e-tip-right {
   border-left-color: #dfdfdf !important;
   color: #fff !important;
+}
+
+body .ui-tooltip-notification.e-popup {
+  background-color: #fff !important;
 }
 
 body .ui-tooltip-notification {
@@ -2219,11 +2227,11 @@ body section.dashboard header .column_two ul li:nth-child(4) img {
 }
 
 body section.dashboard header .column_two ul li:nth-child(5) {
-  width: 120px;
+  width: 25px;
 }
 
 body section.dashboard header .column_two ul li {
-  width: 74px;
+  width: 175px;
   height: 59px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2242,6 +2250,18 @@ body section.dashboard header .column_two ul li {
   line-height: normal;
   letter-spacing: normal;
   color: #5a5a5a;
+}
+
+body section.dashboard header .column_two ul li .user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body section.dashboard header .column_two ul li .bell {
@@ -2324,7 +2344,7 @@ body section.dashboard section.market ul li .circle {
 }
 
 body section.dashboard .main {
-  margin-top: 59px;
+  margin-top: 41px;
   position: relative;
   z-index: 0;
 }
@@ -63881,6 +63901,24 @@ body body.e-fe-popup.e-contextmenu-wrapper ul .e-menu-item .e-fe-tick {
   color: #002b98;
 }
 
+body html {
+  min-height: 100%;
+  position: relative;
+}
+
+body body {
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+body body .mCSB_inside > .mCSB_container {
+  margin-right: 0px !important;
+}
+
+body body .mCSB_container {
+  margin-right: 0px !important;
+}
+
 body .footer {
   height: 51px;
   display: -webkit-box;
@@ -63893,8 +63931,10 @@ body .footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
   z-index: -1;
-  position: relative;
   border-top: solid 1px #dfdfdf;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 body .footer img {
