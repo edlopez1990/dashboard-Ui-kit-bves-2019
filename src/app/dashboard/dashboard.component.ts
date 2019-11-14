@@ -13,23 +13,21 @@ import * as $ from "jquery";
 // }
 export class DashboardComponent implements OnInit {
   public ngOnInit() {
-    $(document).ready(function() {
-      $("#sidebar li a.dropdown-toggle").on("click", function() {
-        $("#sidebar li.dropdown-sub").addClass("dropdown-inactive");
-
-        $("#sidebar li.dropdown-sub").removeClass("dropdown-active");
-
-        if ($(this.parentNode).hasClass("dropdown-inactive")) {
-          console.log("TRUE");
-          $(this.parentNode).addClass("dropdown-active");
-          // $(this.parentNode).removeClass("dropdown-inactive");
-        } else {
-          console.log("FALSE");
-          // $(this.parentNode).addClass("dropdown-inactive");
-          // $(this.parentNode).removeClass("dropdown-active");
-        }
-      });
-    });
+    // $(document).ready(function() {
+    //   $("#sidebar li a.dropdown-toggle").on("click", function() {
+    //     $("#sidebar li.dropdown-sub").addClass("dropdown-inactive");
+    //     $("#sidebar li.dropdown-sub").removeClass("dropdown-active");
+    //     if ($(this.parentNode).hasClass("dropdown-inactive")) {
+    //       console.log("TRUE");
+    //       $(this.parentNode).addClass("dropdown-active");
+    //       // $(this.parentNode).removeClass("dropdown-inactive");
+    //     } else {
+    //       console.log("FALSE");
+    //       // $(this.parentNode).addClass("dropdown-inactive");
+    //       // $(this.parentNode).removeClass("dropdown-active");
+    //     }
+    //   });
+    // });
   }
   text =
     "&nbsp &nbsp &nbsp Bolsa de Valores de El Salvador®. Todos los derechos reservado";
