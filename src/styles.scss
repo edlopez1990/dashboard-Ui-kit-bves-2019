@@ -1,7 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
-
 html,
 body,
 div,
@@ -99,8 +97,6 @@ a {
 /* ------      Indice      ----- */
 /* ----------------------------- */
 
-
-
 // - 01 - ui/kit class btn primario
 // - 02 - ui/kit class btn secundario
 // - 03 - ui/kit class btn primario compra
@@ -130,16 +126,15 @@ a {
 // - 27 - ui/kit calendar rangue
 // - 28 - ui/kit tooltip
 // - 28 - 01 - ui/kit tooltip app
-// - 28 - 02 - ui/kit tooltip logout 
-// - 28 - 03 - ui/kit tooltip Notification 
-// - 30 - ui/kit Label gray and black 
+// - 28 - 02 - ui/kit tooltip logout
+// - 28 - 03 - ui/kit tooltip Notification
+// - 30 - ui/kit Label gray and black
 // - 31 -  Import style project
 
 body {
-
-
   // 01 -ui/kit class btn primeario
-
+  position: relative;
+  margin-bottom: 51px;
   .btn-ui,
   .btn-ui button {
     min-width: 150px;
@@ -147,13 +142,11 @@ body {
     font-family: Lato;
     font-size: 13px;
     margin: 0px 5px;
-
   }
-
 
   button.btn-primario,
   .btn-primario button {
-    background-color: #002B98 !important;
+    background-color: #002b98 !important;
     border-radius: 5px !important;
     color: #fff !important;
     text-decoration: none !important;
@@ -166,8 +159,6 @@ body {
     color: #fff !important;
   }
 
-
-
   button.btn-primario-hover,
   .btn-primario-hover button {
     background-color: #042476 !important;
@@ -176,34 +167,28 @@ body {
     border-radius: 5px !important;
   }
 
-
   button.btn-primario-focus,
   .btn-primario-focus button {
-
-    background-color: #002B98 !important;
+    background-color: #002b98 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-primario-disable,
   .btn-primario-disable button {
-
     text-decoration: none !important;
-    color: #7695A4 !important;
-    background-color: #EBEBEB !important;
+    color: #7695a4 !important;
+    background-color: #ebebeb !important;
     border-radius: 5px !important;
-
   }
-
 
   // 02 - ui/kit class btn secundario
   .btn-secundario button {
     background-color: #ffff !important;
-    border: 1px solid #0230A6 !important;
+    border: 1px solid #0230a6 !important;
     border-radius: 5px !important;
-    color: #0230A6 !important;
+    color: #0230a6 !important;
     text-decoration: none !important;
   }
 
@@ -213,13 +198,11 @@ body {
     color: #fff !important;
   }
 
-
-
   button.btn-secundario {
     background-color: #ffff !important;
-    border: 1px solid #0230A6 !important;
+    border: 1px solid #0230a6 !important;
     border-radius: 5px !important;
-    color: #0230A6 !important;
+    color: #0230a6 !important;
     text-decoration: none !important;
   }
 
@@ -229,83 +212,66 @@ body {
     color: #fff !important;
   }
 
-
-
   button.btn-secundario-hover,
   .btn-secundario-hover button {
-
     background-color: #042476 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-focus,
   .btn-secundario-focus button {
-
     background-color: #ffff !important;
-    border: 1px solid #0230A6 !important;
+    border: 1px solid #0230a6 !important;
     border-radius: 5px !important;
-    color: #0230A6 !important;
+    color: #0230a6 !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-disable,
   .btn-secundario-disable button {
-
     text-decoration: none !important;
-    color: #7695A4 !important;
-    background-color: #EBEBEB !important;
+    color: #7695a4 !important;
+    background-color: #ebebeb !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-active,
   .btn-secundario-active button {
-
     background-color: #042476 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   //03 - ui/kit class btn primario compra
   button.btn-primario-compra,
   .btn-primario-compra button {
-
-    background-color: #FC7C05 !important;
+    background-color: #fc7c05 !important;
     border-radius: 5px !important;
     color: #fff !important;
     text-decoration: none !important;
-
   }
 
   button.btn-primario-compra:hover,
   .btn-primario-compra button:hover {
-    background-color: #ED923E !important;
+    background-color: #ed923e !important;
     border-radius: 5px !important;
     color: #fff !important;
   }
 
-
-
-
   button.btn-primario-compra-hover,
   btn-primario-compra-hover button {
-
-    background-color: #ED923E !important;
+    background-color: #ed923e !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-primario-compra-focus,
   btn-primario-compra-focus button {
-    background-color: #FC7C05 !important;
+    background-color: #fc7c05 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
@@ -313,90 +279,75 @@ body {
 
   button.btn-primario-compra-disable,
   btn-primario-compra-disable button {
-
     text-decoration: none !important;
-    color: #7695A4 !important;
-    background-color: #EBEBEB !important;
+    color: #7695a4 !important;
+    background-color: #ebebeb !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-primario-compra-active,
   btn-primario-compra-active button {
-
-    background-color: #ED923E !important;
+    background-color: #ed923e !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
-
-
 
   // 04 - ui/kit class btn secundario compra
   button.btn-secundario-compra,
   .btn-secundario-compra button {
-
     background-color: #ffff !important;
-    border: 1px solid #FC7C05 !important;
+    border: 1px solid #fc7c05 !important;
     border-radius: 5px !important;
-    color: #FC7C05 !important;
+    color: #fc7c05 !important;
     text-decoration: none !important;
   }
 
   button.btn-secundario-compra:hover,
   .btn-secundario-compra button:hover {
-    background-color: #FC7C05 !important;
+    background-color: #fc7c05 !important;
     color: #fff !important;
     border-radius: 5px !important;
   }
 
-
   button.btn-secundario-compra-hover,
   .btn-secundario-compra-hover button {
-
-    background-color: #FC7C05 !important;
+    background-color: #fc7c05 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-compra-focus,
   .btn-secundario-compra-focus button {
-
     background-color: #ffff !important;
-    border: 1px solid #FC7C05 !important;
+    border: 1px solid #fc7c05 !important;
     border-radius: 5px !important;
-    color: #FC7C05 !important;
+    color: #fc7c05 !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-compra-active,
   .btn-secundario-compra-active button {
-
     background-color: #ffff !important;
-    border: 1px solid #FC7C05 !important;
+    border: 1px solid #fc7c05 !important;
     border-radius: 5px !important;
-    color: #FC7C05 !important;
+    color: #fc7c05 !important;
     text-decoration: none !important;
   }
 
   button.btn-secundario-compra-disable,
   btn-secundario-compra-disable button {
-
     text-decoration: none !important;
-    color: #7695A4 !important;
-    background-color: #EBEBEB !important;
+    color: #7695a4 !important;
+    background-color: #ebebeb !important;
     border-radius: 5px !important;
-
   }
 
   // 05 -  ui/kit class btn primario venta
   button.btn-primario-venta,
   .btn-primario-venta button {
-    background-color: #00B147 !important;
+    background-color: #00b147 !important;
     border-radius: 5px !important;
     color: #fff !important;
     text-decoration: none !important;
@@ -404,35 +355,30 @@ body {
 
   button.btn-primario-venta:hover,
   .btn-primario-venta button:hover {
-    background-color: #00B147 !important;
+    background-color: #00b147 !important;
     border-radius: 5px !important;
     color: #fff !important;
   }
 
-
   button.btn-primario-venta-hover,
   .btn-primario-venta-hover button {
-
-    background-color: #25BA61 !important;
+    background-color: #25ba61 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-primario-venta-focus,
   .btn-primario-venta-focus button {
-
-    background-color: #00B147 !important;
+    background-color: #00b147 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-primario-venta-active,
   .btn-primario-venta-active button {
-    background-color: #00B147 !important;
+    background-color: #00b147 !important;
     border-radius: 5px !important;
     color: #fff !important;
     text-decoration: none !important;
@@ -440,84 +386,68 @@ body {
 
   button.btn-primario-venta-disable,
   .btn-primario-venta-disable button {
-
     text-decoration: none !important;
-    color: #7695A4 !important;
-    background-color: #EBEBEB !important;
+    color: #7695a4 !important;
+    background-color: #ebebeb !important;
     border-radius: 5px !important;
-
   }
-
 
   // 06 - ui/kit class btn secundario venta
   button.btn-secundario-venta,
   .btn-secundario-venta button {
     background-color: #ffff !important;
-    border: 1px solid #00B147 !important;
+    border: 1px solid #00b147 !important;
     border-radius: 5px !important;
-    color: #00B147 !important;
+    color: #00b147 !important;
     text-decoration: none !important;
   }
 
   button.btn-secundario-venta:hover,
   .btn-secundario-venta button:hover {
-    background-color: #00B147 !important;
+    background-color: #00b147 !important;
     color: #fff !important;
     border-radius: 5px !important;
   }
 
-
-
   button.btn-secundario-venta-hover,
   .btn-secundario-venta-hover button {
-
-    background-color: #25BA61 !important;
+    background-color: #25ba61 !important;
     border-radius: 5px !important;
     color: #fff !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-venta-focus,
   .btn-secundario-venta-focus button {
-
     background-color: #ffff !important;
-    border: 1px solid #00B147 !important;
+    border: 1px solid #00b147 !important;
     border-radius: 5px !important;
-    color: #00B147 !important;
+    color: #00b147 !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-venta-disable,
   .btn-secundario-venta-disable button {
-
     text-decoration: none !important;
-    color: #7695A4 !important;
-    background-color: #EBEBEB !important;
+    color: #7695a4 !important;
+    background-color: #ebebeb !important;
     border-radius: 5px !important;
-
   }
 
   button.btn-secundario-venta-active,
   .btn-secundario-venta-active button {
     background-color: #ffff !important;
-    border: 1px solid #00B147 !important;
+    border: 1px solid #00b147 !important;
     border-radius: 5px !important;
-    color: #00B147 !important;
+    color: #00b147 !important;
     text-decoration: none !important;
   }
 
-
-
-
-
   // 07 - ui/kit class bgroupbuttons
-
 
   .groupbuttons-primario.e-btn-group,
   .groupbuttons-primario .e-btn-group {
-    border: 1px solid #0230A6;
+    border: 1px solid #0230a6;
     border-radius: 5px;
     height: 44px;
 
@@ -540,17 +470,16 @@ body {
     button:active,
     button:focus,
     button.active {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
       color: #fff !important;
     }
   }
-
 
   // 08 - ui / kit group buttons compra
 
   .groupbuttons-compra.e-btn-group,
   .groupbuttons-compra .e-btn-group {
-    border: 1px solid #00B147;
+    border: 1px solid #00b147;
     border-radius: 5px;
     height: 44px;
 
@@ -573,17 +502,16 @@ body {
     button:active,
     button:focus,
     button.active {
-      background-color: #00B147 !important;
+      background-color: #00b147 !important;
       color: #fff !important;
     }
   }
-
 
   // 09 - ui/kit group buttons venta
 
   .groupbuttons-venta.e-btn-group,
   .groupbuttons-venta .e-btn-group {
-    border: 1px solid #FC7C05;
+    border: 1px solid #fc7c05;
     border-radius: 5px;
     height: 44px;
 
@@ -606,14 +534,12 @@ body {
     button:active,
     button:focus,
     button.active {
-      background-color: #FC7C05 !important;
+      background-color: #fc7c05 !important;
       color: #fff !important;
     }
   }
 
-
   //10 - ui/kit - toggleswitch
-
 
   .toggleswitch.e-switch-wrapper,
   .toggleswitch .e-switch-wrapper {
@@ -632,39 +558,34 @@ body {
     }
 
     .e-switch-on {
-      background-color: #002B98;
+      background-color: #002b98;
     }
 
     .e-switch-off {
-      background-color: #002B98;
+      background-color: #002b98;
       opacity: 0.2404901413690476;
     }
-
-
   }
 
   .toggleswitch.e-switch-wrapper:hover,
   .toggleswitch .e-switch-wrapper:hover {
     .e-switch-inner.e-switch-active {
       .e-switch-on {
-        background-color: #002B98;
+        background-color: #002b98;
       }
     }
   }
-
 
   //11 - ui/kit textbox
   .ui-textbox {
     .wrap {
       padding: 0px;
       width: auto;
-
-
     }
 
     .e-input-group {
       input {
-        border: 1px solid #E2E2E2 !important;
+        border: 1px solid #e2e2e2 !important;
         background-color: #fff;
       }
     }
@@ -675,7 +596,7 @@ body {
     margin-bottom: 0px !important;
 
     input {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
 
       // border: 1px solid #E2E2E2 !important;
       padding: 0px 10px !important;
@@ -686,7 +607,7 @@ body {
     }
 
     label {
-      color: #5A5A5A;
+      color: #5a5a5a;
       font-family: Lato;
       font-size: 13px;
       font-weight: 700;
@@ -698,20 +619,19 @@ body {
 
   //12 - ui/kit Dropdown
   .ui-dropdown label {
-
     font-family: Lato;
     font-size: 13px;
     font-weight: 700;
     line-height: 16px;
     text-align: left;
     left: 10px;
-    color: #5A5A5A;
+    color: #5a5a5a;
   }
 
   .ui-dropdown.e-dropdownlist,
   .ui-dropdown .e-dropdownlist {
-    background-color: #FFFFFF;
-    border: 1px solid #E2E2E2;
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
     border-radius: 5px;
     height: 44px;
     margin-bottom: 0px;
@@ -739,22 +659,21 @@ body {
 
   .e-grid .e-groupdroparea.e-grouped {
     background-color: #0037c1 !important;
-
   }
 
   .custom-grid.e-table,
   .custom-grid .e-table {
     tbody tr:nth-child(odd) {
-      background-color: #F4F5F9;
+      background-color: #f4f5f9;
     }
   }
 
   .custom-grid .e-pager,
   .custom-grid.e-pager {
     .e-currentitem {
-      background: #E8EEFD;
+      background: #e8eefd;
 
-      color: #002B98;
+      color: #002b98;
       font-family: Lato;
       font-size: 12px;
       font-weight: 700;
@@ -766,10 +685,9 @@ body {
   .custom-grid .e-grid,
   .custom-grid.e-grid {
     .e-rowcell {
-      color: #4A4A4A !important;
+      color: #4a4a4a !important;
     }
   }
-
 
   .boton-progress-butt {
     color: #858585;
@@ -784,7 +702,7 @@ body {
 
   .input-number.e-numeric,
   .input-number .e-numeric {
-    border: 1px solid #E2E2E2 !important;
+    border: 1px solid #e2e2e2 !important;
     border-radius: 5px !important;
     height: 44px !important;
     padding: 10px;
@@ -795,7 +713,6 @@ body {
   //   min-height: 35px !important;
   // }
 
-
   // 15 - ui/kit checkbox
   .ui-checkbox {
     ul {
@@ -805,30 +722,28 @@ body {
 
   .e-checkbox-wrapper .e-frame.e-check,
   .e-css.e-checkbox-wrapper .e-frame.e-check {
-    background-color: #00B147 !important;
+    background-color: #00b147 !important;
   }
-
 
   .ui-acordion.e-accordion,
   .ui-acordion .e-accordion {
-    border: 0px solid #E2E2E2 !important;
+    border: 0px solid #e2e2e2 !important;
 
     .e-acrdn-header-content {
-      color: #002B98 !important;
+      color: #002b98 !important;
     }
 
     .e-acrdn-header {
-      background-color: #F6F6F6;
-      border: 1px solid #E2E2E2;
+      background-color: #f6f6f6;
+      border: 1px solid #e2e2e2;
       border-radius: 5px 5px 0 0;
       height: 44px;
     }
 
     .e-acrdn-panel {
-      border: 1px solid #E2E2E2;
+      border: 1px solid #e2e2e2;
     }
   }
-
 
   // 16 - ui horizontal menu
 
@@ -843,24 +758,21 @@ body {
 
   .ui-horizontal-menu.e-menu-parent,
   .ui-horizontal-menu .e-menu-parent {
-    border: 1px solid #E2E2E2;
+    border: 1px solid #e2e2e2;
     border-radius: 5px 5px 5px 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 44px;
   }
-
-
 
   // 17 - ui/kit vertical menu
 
   .ui-vertical-menu .e-popup-open,
   .ui-vertical-menu .e-popup-open {
     .e-menu-parent {
-      border: 1px solid #E2E2E2;
+      border: 1px solid #e2e2e2;
       border-radius: 5px 5px 5px 5px;
     }
   }
-
 
   .ui-vertical-menu .e-menu-wrapper,
   .ui-vertical-menu.e-menu-wrapper {
@@ -872,15 +784,11 @@ body {
       min-width: 233px;
     }
 
-
-
     .e-menu-parent {
-      border: 1px solid #E2E2E2;
+      border: 1px solid #e2e2e2;
       border-radius: 5px 5px 5px 5px;
-      background-color: #FFFFFF;
-
+      background-color: #ffffff;
     }
-
   }
 
   //18 - ui/kit card
@@ -888,13 +796,13 @@ body {
   .ui-card .e-card,
   .ui-card.e-card {
     padding: 10px 20px;
-    background-color: #FFFFFF;
-    border: 1px solid #9B9B9B;
+    background-color: #ffffff;
+    border: 1px solid #9b9b9b;
     border-radius: 6px;
 
     // width: 268px;
     /* height: 75px; */
-    border-left: 5px solid #002B98;
+    border-left: 5px solid #002b98;
     margin-bottom: 5px;
 
     .e-card-header {
@@ -903,7 +811,7 @@ body {
     }
 
     .e-card-title {
-      color: #002B98;
+      color: #002b98;
       font-family: Lato;
       font-size: 14px;
       font-weight: 700;
@@ -913,7 +821,7 @@ body {
     }
 
     .e-card-content {
-      color: #4A4A4A;
+      color: #4a4a4a;
       font-family: Lato;
       font-size: 11px;
       font-weight: 400;
@@ -923,7 +831,6 @@ body {
       padding: 0px !important;
     }
   }
-
 
   // 19 - ui/kit Tab
 
@@ -936,52 +843,45 @@ body {
 
     .e-tab-wrap:hover {
       .e-tab-text {
-        color: #002B98 !important;
-
+        color: #002b98 !important;
       }
     }
 
     .e-text-wrap:hover {
       .e-tab-text {
-        color: #002B98 !important;
-
+        color: #002b98 !important;
       }
     }
 
     .e-tab-header {
       .e-active {
         .e-tab-text {
-          color: #002B98;
-
+          color: #002b98;
         }
       }
 
       .e-indicator {
-        background-color: #002B98;
+        background-color: #002b98;
       }
 
       .e-tab-wrap:hover {
-        color: #002B98;
+        color: #002b98;
       }
 
       .e-toolbar-item.e-active {
         .e-tab-text {
-          color: #002B98;
-
+          color: #002b98;
         }
       }
-
     }
   }
 
-
   //20 - ui/kit Tooltip
-
 
   .ui-tooltip.tooltipContent,
   .ui-tooltip .tooltipContent {
     input {
-      background-color: #002B98;
+      background-color: #002b98;
       border-radius: 5px;
       width: 179px;
       height: 44px;
@@ -989,34 +889,29 @@ body {
     }
   }
 
-
   //21 - ui/kit Toast
   button.ui-toast,
   .ui-toast button {
-
-    background-color: #002B98 !important;
+    background-color: #002b98 !important;
     border-radius: 5px;
     width: 179px;
     height: 44px;
     color: #fff;
-
   }
 
   //22 - ui/kit Popup
   .ui-popup {
     button#targetButton {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
       border-radius: 5px;
       width: 179px;
       height: 44px;
       color: #fff;
     }
 
-
-
     #dialog {
-      background-color: #FFFFFF;
-      border: 1px solid #E2E2E2;
+      background-color: #ffffff;
+      border: 1px solid #e2e2e2;
       border-radius: 7px;
       height: 100%;
       display: block;
@@ -1026,8 +921,8 @@ body {
 
   // 23 - ui/kit Dialog
   .e-dialog {
-    background-color: #FFFFFF;
-    border: 1px solid #E2E2E2;
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
     border-radius: 7px;
     box-shadow: none;
 
@@ -1040,7 +935,7 @@ body {
     }
 
     .e-dlg-heade {
-      color: #4A4A4A;
+      color: #4a4a4a;
       font-family: Lato;
       font-size: 18px;
       font-weight: 700;
@@ -1049,7 +944,7 @@ body {
     }
 
     .e-dlg-content {
-      color: #4A4A4A;
+      color: #4a4a4a;
       font-family: Lato;
       font-size: 14px;
       font-weight: 400;
@@ -1062,11 +957,11 @@ body {
     }
 
     button {
-      border: 1px solid #002B98 !important;
+      border: 1px solid #002b98 !important;
       border-radius: 5px;
       width: 179px;
       height: 44px;
-      color: #002B98;
+      color: #002b98;
       font-family: Lato;
       font-size: 13px;
       font-weight: 700;
@@ -1075,8 +970,8 @@ body {
     }
 
     button.e-primary {
-      background-color: #002B98 !important;
-      border: 1px solid #002B98 !important;
+      background-color: #002b98 !important;
+      border: 1px solid #002b98 !important;
       border-radius: 5px;
       width: 179px;
       height: 44px;
@@ -1087,71 +982,66 @@ body {
       line-height: 16px;
       text-align: center;
     }
-
   }
 
   //24 -  ui/kit Slider
   .ui-slider {
     .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
 
     .e-control-wrapper.e-slider-container .e-slider .e-handle {
-      background-color: #002B98 !important;
-      border-color: #002B98 !important;
+      background-color: #002b98 !important;
+      border-color: #002b98 !important;
     }
 
     .e-control-wrapper.e-slider-container .e-slider .e-handle {
-      background-color: #002B98 !important;
-      border-color: #002B98 !important;
+      background-color: #002b98 !important;
+      border-color: #002b98 !important;
     }
 
     .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
 
     .e-slider-tooltip.e-tooltip-wrap.e-popup {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
 
     .e-slider-tooltip.e-tooltip-wrap.e-popup {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
 
     .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
 
     .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
 
     .e-control-wrapper.e-slider-container .e-slider .e-range {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
 
     .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
     }
-
   }
 
-
   // 25 - ui/kit Calendar
-
 
   .ui-calendar.e-datepicker,
   .ui-calendar .e-datepicker {
     .e-input-group {
-      background-color: #FFFFFF !important;
-      border: 1px solid #E2E2E2 !important;
+      background-color: #ffffff !important;
+      border: 1px solid #e2e2e2 !important;
       border-radius: 5px !important;
       // max-width: 222px;
       height: 44px !important;
       padding: 5px !important;
     }
   }
-
 
   //26 - ui/kit Ui Chip
 
@@ -1161,25 +1051,23 @@ body {
     height: 30px;
 
     .e-success {
-      background-color: #002B98 !important;
+      background-color: #002b98 !important;
       border-radius: 17px;
     }
 
     .e-info {
-      background-color: #00B147 !important;
+      background-color: #00b147 !important;
       border-radius: 17px;
     }
 
     .e-warning {
-      background-color: #FC7C05 !important;
+      background-color: #fc7c05 !important;
       border-radius: 17px;
     }
   }
 
-
-
-
-  .ui-calendar {}
+  .ui-calendar {
+  }
 
   // 27 - ui/kit calendar rangue
 
@@ -1196,18 +1084,16 @@ body {
 
   //  28 - ui/kit tooltip
 
-
-  .ui-tooltip {}
+  .ui-tooltip {
+  }
 
   .ui-tooltip .e-btn,
   .ui-tooltip.e-btn {
-
     background: transparent;
     box-shadow: none;
     font-family: Lato;
     font-weight: 600;
     text-transform: capitalize;
-
   }
 
   ul.list-tooltip {
@@ -1221,15 +1107,16 @@ body {
     }
   }
 
-
-
   .ui-tooltip.e-tooltip-wrap {
-
     border: 1px solid #1d2f5f !important;
     opacity: 0.9 !important;
     border-radius: 5px !important;
     min-width: 185px;
-    background-image: linear-gradient(180deg, #0230A6 0%, #02072F 100%) !important;
+    background-image: linear-gradient(
+      180deg,
+      #0230a6 0%,
+      #02072f 100%
+    ) !important;
     background-color: transparent !important;
   }
 
@@ -1237,8 +1124,6 @@ body {
     border-top-color: #1d2f5f !important;
     color: #1d2f5f !important;
   }
-
-
 
   .ui-tooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
     border-top-color: #1d2f5f !important;
@@ -1280,13 +1165,12 @@ body {
     color: #1d2f5f !important;
   }
 
-  //  28 - 01 - ui/kit tooltip app 
+  //  28 - 01 - ui/kit tooltip app
   .ui-tooltip-app.e-popup {
     background-color: #fff !important;
   }
 
   .ui-tooltip-app {
-
     opacity: 1 !important;
     border-radius: 5px !important;
     background-color: #fff !important;
@@ -1294,8 +1178,6 @@ body {
 
     box-shadow: -20px 14px 24px 0 rgba(0, 0, 0, 0.05) !important;
     border: solid 1px #dfdfdf !important;
-
-
 
     .e-tip-content {
       background: transparent;
@@ -1330,12 +1212,9 @@ body {
               object-fit: contain;
             }
           }
-
-
         }
       }
     }
-
 
     .e-arrow-tip-outer.e-tip-top {
       border-top-color: #dfdfdf !important;
@@ -1381,16 +1260,14 @@ body {
       border-left-color: #dfdfdf !important;
       color: #fff !important;
     }
-
   }
 
-  // 28 - 01 - ui/kit tooltip logout 
+  // 28 - 01 - ui/kit tooltip logout
   .ui-tooltip-logout.e-popup {
     background-color: #fff !important;
   }
 
   .ui-tooltip-logout {
-
     opacity: 1 !important;
     border-radius: 5px !important;
     background-color: #ffff !important;
@@ -1409,14 +1286,13 @@ body {
       display: flex;
 
       li {
-        color: #002B98;
+        color: #002b98;
         width: calc(100% / 2);
         display: flex;
         align-items: center;
         justify-content: center;
 
         strong {
-
           font-family: Lato;
           font-size: 12px;
           font-weight: normal;
@@ -1439,16 +1315,12 @@ body {
           color: #5a5a5a;
         }
       }
-
     }
-
 
     .e-arrow-tip-outer.e-tip-top {
       border-top-color: #dfdfdf !important;
       color: #fff !important;
     }
-
-
 
     .e-arrow-tip-outer.e-tip-bottom {
       border-top-color: #dfdfdf !important;
@@ -1489,16 +1361,14 @@ body {
       border-left-color: #dfdfdf !important;
       color: #fff !important;
     }
-
   }
 
-  // 28 - 01 - ui/kit tooltip Notification 
+  // 28 - 01 - ui/kit tooltip Notification
   .ui-tooltip-notification.e-popup {
     background-color: #fff !important;
   }
 
   .ui-tooltip-notification {
-
     opacity: 1 !important;
     border-radius: 5px !important;
     background-color: #ffff !important;
@@ -1518,14 +1388,13 @@ body {
       position: relative;
 
       li {
-        color: #002B98;
+        color: #002b98;
         width: calc(100%);
         display: flex;
         align-items: center;
         justify-content: center;
 
         strong {
-
           font-family: Lato;
           font-size: 12px;
           font-weight: normal;
@@ -1548,21 +1417,16 @@ body {
           color: #5a5a5a;
         }
       }
-
     }
 
     .block-2 {
       text-align: center;
     }
 
-
-
     .e-arrow-tip-outer.e-tip-top {
       border-top-color: #dfdfdf !important;
       color: #fff !important;
     }
-
-
 
     .e-arrow-tip-outer.e-tip-bottom {
       border-top-color: #dfdfdf !important;
@@ -1603,26 +1467,22 @@ body {
       border-left-color: #dfdfdf !important;
       color: #fff !important;
     }
-
-
-
   }
 
-
-  .ui-context-menu {}
+  .ui-context-menu {
+  }
 
   .e-contextmenu-wrapper {
     ul.e-contextmenu {
-      border: 1px solid #E2E2E2 !important;
+      border: 1px solid #e2e2e2 !important;
       border-radius: 5px 5px 5px 5px !important;
-      background-color: #FFFFFF !important;
+      background-color: #ffffff !important;
       box-shadow: none !important;
     }
   }
 
   //29 dashboard panel - card
   .panel {
-
     .ui-card .e-card,
     .ui-card.e-card {
       display: flex;
@@ -1639,7 +1499,6 @@ body {
         color: #002b98;
       }
     }
-
   }
 
   .ui-card .e-card,
@@ -1659,7 +1518,7 @@ body {
     }
   }
 
-  //30  ui/kit Label gray and black 
+  //30  ui/kit Label gray and black
   .ui-label-gray {
     font-family: Lato;
     font-size: 12px !important;
@@ -1700,15 +1559,24 @@ body {
     }
   }
 
-
   .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,
   .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,
-  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
-  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after,
-  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before,
-  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after,
-  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
-  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after {
+  .e-float-input.e-input-group.e-float-icon-left
+    .e-input-in-wrap
+    .e-float-line::before,
+  .e-float-input.e-input-group.e-float-icon-left
+    .e-input-in-wrap
+    .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
+    .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
+    .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left
+    .e-input-in-wrap
+    .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left
+    .e-input-in-wrap
+    .e-float-line::after {
     height: 0px !important;
   }
 
@@ -1718,19 +1586,21 @@ body {
   .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
   .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
   .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
-  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
-  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
+    .e-input-in-wrap::before,
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
+    .e-input-in-wrap::after {
     height: 0px !important;
   }
 
   // 31 -  Import style project
-  @import './assets/css/login.scss';
-  @import './assets/css/error.scss';
-  @import './assets/css/dashboard.scss';
-  @import './assets/css/detail.scss';
+  @import "./assets/css/login.scss";
+  @import "./assets/css/error.scss";
+  @import "./assets/css/dashboard.scss";
+  @import "./assets/css/detail.scss";
   // Import style syncfusion
-  @import './assets/css/material.css';
-  @import './assets/css/material.scss';
+  @import "./assets/css/material.css";
+  @import "./assets/css/material.scss";
 
   // @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
   // @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
@@ -1742,8 +1612,6 @@ body {
   // @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
   // @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 
-
-
   // Footer style
 
   html {
@@ -1752,10 +1620,11 @@ body {
   }
 
   body {
-    margin: 0;
+    position: relative;
     margin-bottom: 51px;
+    margin: 0;
 
-    .mCSB_inside>.mCSB_container {
+    .mCSB_inside > .mCSB_container {
       margin-right: 0px !important;
     }
 
@@ -1774,7 +1643,7 @@ body {
     border-top: solid 1px #dfdfdf;
 
     position: absolute;
-    bottom: 0;
+    bottom: -51px;
     width: 100%;
 
     img {
@@ -1799,5 +1668,4 @@ body {
       width: 100%;
     }
   }
-
 }
