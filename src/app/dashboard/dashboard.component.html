@@ -2,24 +2,15 @@
   <div class="wrapper">
     <!-- Sidebar  -->
     <!-- aqui hare el toggle de la clase para poder expandir el sidebar -->
-    <nav
-      id="sidebar"
-      class="mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar "
-      [ngClass]="status ? 'active' : ''"
-    >
+    <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar " [ngClass]="status ? 'active' : ''">
       <div class="sidebar-header">
         <h3>Menú</h3>
       </div>
 
       <ul class="list-unstyled components">
         <li class="active dropdown-sub dropdown-inactive">
-          <a
-            href="#homeSubmenu"
-            data-toggle="collapse"
-            aria-expanded="false"
-            class="dropdown-toggle dropdown-toggle-index-1"
-            >Opción 1</a
-          >
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+            class="dropdown-toggle dropdown-toggle-index-1">Opción 1</a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
             <li>
               <a class="register-custom" href="#">Home 1</a>
@@ -36,13 +27,8 @@
           <a class="register-custom" href="#">Opción 2</a>
         </li>
         <li class="dropdown-sub dropdown-inactive">
-          <a
-            href="#pageSubmenu"
-            data-toggle="collapse"
-            aria-expanded="false"
-            class="dropdown-toggle dropdown-toggle-index-2"
-            >Opción 3</a
-          >
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+            class="dropdown-toggle dropdown-toggle-index-2">Opción 3</a>
           <ul class="collapse list-unstyled" id="pageSubmenu">
             <li>
               <a class="register-custom" href="#">Page 1</a>
@@ -65,14 +51,10 @@
           <a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a>
         </li>
         <li>
-          <a class="nav-link register-custom" (click)="onTabClick(3)"
-            >Detalle</a
-          >
+          <a class="nav-link register-custom" (click)="onTabClick(3)">Detalle</a>
         </li>
         <li>
-          <a class="nav-link register-custom" (click)="onTabClick(4)"
-            >Registro</a
-          >
+          <a class="nav-link register-custom" (click)="onTabClick(4)">Registro</a>
         </li>
       </ul>
     </nav>
@@ -83,12 +65,7 @@
       <header>
         <div class="column_one">
           <div class="hamburguer-menu">
-            <button
-              type="button"
-              id="sidebarCollapse"
-              (click)="toggle_sidebar()"
-              class="btn"
-            >
+            <button type="button" id="sidebarCollapse" (click)="toggle_sidebar()" class="btn">
               <i class="fas fa-align-left"></i>
             </button>
 
@@ -112,12 +89,8 @@
               </div>
             </li>
             <li>
-              <ejs-tooltip
-                #tooltip
-                id="tooltip"
-                position="BottomCenter"
-                cssClass="ui-tooltip-notification"
-              >
+              <ejs-tooltip #tooltip id="tooltip" position="BottomCenter" cssClass="ui-tooltip-notification"
+                opensOn='Click'>
                 <ng-template #content>
                   <div class="content-list">
                     <div class="block-1">
@@ -126,9 +99,7 @@
                           <div>
                             <strong>First Notification</strong>
                             <br />
-                            <label for=""
-                              >Peticiones de Modificacion Pendiente</label
-                            >
+                            <label for="">Peticiones de Modificacion Pendiente</label>
                             <hr />
                           </div>
                         </li>
@@ -136,9 +107,7 @@
                           <div>
                             <strong>First Notification</strong>
                             <br />
-                            <label for=""
-                              >Peticiones de Modificacion Pendiente</label
-                            >
+                            <label for="">Peticiones de Modificacion Pendiente</label>
                             <hr />
                           </div>
                         </li>
@@ -146,9 +115,7 @@
                           <div>
                             <strong>First Notification</strong>
                             <br />
-                            <label for=""
-                              >Peticiones de Modificacion Pendiente</label
-                            >
+                            <label for="">Peticiones de Modificacion Pendiente</label>
                             <hr />
                           </div>
                         </li>
@@ -156,9 +123,7 @@
                           <div>
                             <strong>First Notification</strong>
                             <br />
-                            <label for=""
-                              >Peticiones de Modificacion Pendiente</label
-                            >
+                            <label for="">Peticiones de Modificacion Pendiente</label>
                             <hr />
                           </div>
                         </li>
@@ -166,9 +131,7 @@
                           <div>
                             <strong>First Notification</strong>
                             <br />
-                            <label for=""
-                              >Peticiones de Modificacion Pendiente</label
-                            >
+                            <label for="">Peticiones de Modificacion Pendiente</label>
                             <hr />
                           </div>
                         </li>
@@ -188,47 +151,27 @@
               </ejs-tooltip>
             </li>
             <li>
-              <ejs-tooltip
-                #tooltip
-                id="tooltip"
-                position="BottomCenter"
-                cssClass="ui-tooltip-app"
-              >
+              <ejs-tooltip #tooltip id="tooltip" position="BottomCenter" cssClass="ui-tooltip-app" opensOn='Click'>
                 <ng-template #content>
                   <div class="">
                     <ul class="list-tooltip-app">
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
                       </li>
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
                       </li>
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
@@ -237,36 +180,21 @@
                     <ul class="list-tooltip-app">
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
                       </li>
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
                       </li>
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
@@ -275,36 +203,21 @@
                     <ul class="list-tooltip-app">
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
                       </li>
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
                       </li>
                       <li>
                         <div>
-                          <a href=""
-                            ><img
-                              class="block"
-                              src="./assets/img/frame_white.svg"
-                              alt=""
-                          /></a>
+                          <a href=""><img class="block" src="./assets/img/frame_white.svg" alt="" /></a>
                           <br />
                           <label for="">Nombre App</label>
                         </div>
@@ -316,12 +229,7 @@
               </ejs-tooltip>
             </li>
             <li>
-              <ejs-tooltip
-                #tooltip
-                id="tooltip"
-                position="BottomCenter"
-                cssClass="ui-tooltip-logout"
-              >
+              <ejs-tooltip #tooltip id="tooltip" position="BottomCenter" cssClass="ui-tooltip-logout" opensOn='Click'>
                 <ng-template #content>
                   <div class="content-user">
                     <div class="block-1">

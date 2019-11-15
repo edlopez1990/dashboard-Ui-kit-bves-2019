@@ -135,6 +135,7 @@ body {
   // 01 -ui/kit class btn primeario
   position: relative;
   margin-bottom: 51px;
+
   .btn-ui,
   .btn-ui button {
     min-width: 150px;
@@ -1066,8 +1067,7 @@ body {
     }
   }
 
-  .ui-calendar {
-  }
+  .ui-calendar {}
 
   // 27 - ui/kit calendar rangue
 
@@ -1084,8 +1084,7 @@ body {
 
   //  28 - ui/kit tooltip
 
-  .ui-tooltip {
-  }
+  .ui-tooltip {}
 
   .ui-tooltip .e-btn,
   .ui-tooltip.e-btn {
@@ -1112,11 +1111,9 @@ body {
     opacity: 0.9 !important;
     border-radius: 5px !important;
     min-width: 185px;
-    background-image: linear-gradient(
-      180deg,
-      #0230a6 0%,
-      #02072f 100%
-    ) !important;
+    background-image: linear-gradient(180deg,
+        #0230a6 0%,
+        #02072f 100%) !important;
     background-color: transparent !important;
   }
 
@@ -1469,8 +1466,7 @@ body {
     }
   }
 
-  .ui-context-menu {
-  }
+  .ui-context-menu {}
 
   .e-contextmenu-wrapper {
     ul.e-contextmenu {
@@ -1483,6 +1479,7 @@ body {
 
   //29 dashboard panel - card
   .panel {
+
     .ui-card .e-card,
     .ui-card.e-card {
       display: flex;
@@ -1561,22 +1558,12 @@ body {
 
   .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,
   .e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,
-  .e-float-input.e-input-group.e-float-icon-left
-    .e-input-in-wrap
-    .e-float-line::before,
-  .e-float-input.e-input-group.e-float-icon-left
-    .e-input-in-wrap
-    .e-float-line::after,
-  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
-    .e-float-line::before,
-  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
-    .e-float-line::after,
-  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left
-    .e-input-in-wrap
-    .e-float-line::before,
-  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left
-    .e-input-in-wrap
-    .e-float-line::after {
+  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+  .e-float-input.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::before,
+  .e-float-input.e-control-wrapper.e-input-group.e-float-icon-left .e-input-in-wrap .e-float-line::after {
     height: 0px !important;
   }
 
@@ -1586,10 +1573,8 @@ body {
   .e-input-group.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after,
   .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::before,
   .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after,
-  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
-    .e-input-in-wrap::before,
-  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input)
-    .e-input-in-wrap::after {
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::before,
+  .e-input-group.e-control-wrapper.e-float-icon-left:not(.e-float-input) .e-input-in-wrap::after {
     height: 0px !important;
   }
 
@@ -1624,7 +1609,7 @@ body {
     margin-bottom: 51px;
     margin: 0;
 
-    .mCSB_inside > .mCSB_container {
+    .mCSB_inside>.mCSB_container {
       margin-right: 0px !important;
     }
 
@@ -1667,5 +1652,12 @@ body {
       padding-left: 5%;
       width: 100%;
     }
+  }
+}
+
+
+@media only screen and (max-width: 980px) {
+  .sidebar-img-login {
+    display: none !important;
   }
 }
