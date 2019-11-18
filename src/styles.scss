@@ -985,6 +985,10 @@ body {
     }
   }
 
+  .e-dialog.e-popup {
+    position: fixed;
+  }
+
   //24 -  ui/kit Slider
   .ui-slider {
     .e-slider-tooltip.e-tooltip-wrap.e-popup.e-tooltip-wrap.e-popup.e-material-default {
@@ -1663,6 +1667,8 @@ body {
     border-left: #f47200 6px solid;
     border-radius: 5px;
   }
+
+
 }
 
 
