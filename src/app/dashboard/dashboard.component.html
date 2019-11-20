@@ -8,38 +8,71 @@
       </div>
 
       <ul class="list-unstyled components">
+
+
         <li class="active dropdown-sub dropdown-inactive">
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
-            class="dropdown-toggle dropdown-toggle-index-1">Opción 1</a>
-          <ul class="collapse list-unstyled" id="homeSubmenu">
-            <li>
-              <a class="register-custom" href="#">Home 1</a>
-            </li>
-            <li>
-              <a class="register-custom" href="#">Home 2</a>
-            </li>
-            <li>
-              <a class="register-custom" href="#">Home 3</a>
-            </li>
-          </ul>
+
+
+          <!-- <div class="bgcolor">
+
+            <div>
+              <a id="show1" href="#show1" class="footer-toggle-show">Summary goes here 2</a>
+              <a id="hide1" href="#hide1" class="footer-toggle-hide">Summary goes here</a>
+              <div class="footer-details">
+                Content goes here. 1
+              </div>
+            </div>
+
+            <div>
+              <a id="show2" href="#show2" class="footer-toggle-show">Summary goes here</a>
+              <a id="hide2" href="#hide2" class="footer-toggle-hide">Summary goes here</a>
+              <div class="footer-details">
+                Content goes here.2
+              </div>
+            </div>
+          </div> -->
+
+
+          <div>
+            <a id="show1" href="#show1" class="footer-toggle-show">Opción 1</a>
+            <a id="hide1" href="#hide1" class="footer-toggle-hide">Opción 1</a>
+            <div class="footer-details">
+              <ul class=" list-unstyled" id="homeSubmenu">
+                <li>
+                  <a class="register-custom" href="#">Home 1</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Home 2</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Home 3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
+
         <li>
           <a class="register-custom" href="#">Opción 2</a>
         </li>
         <li class="dropdown-sub dropdown-inactive">
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
-            class="dropdown-toggle dropdown-toggle-index-2">Opción 3</a>
-          <ul class="collapse list-unstyled" id="pageSubmenu">
-            <li>
-              <a class="register-custom" href="#">Page 1</a>
-            </li>
-            <li>
-              <a class="register-custom" href="#">Page 2</a>
-            </li>
-            <li>
-              <a class="register-custom" href="#">Page 3</a>
-            </li>
-          </ul>
+          <div>
+            <a id="show2" href="#show2" class="footer-toggle-show">Opción 3</a>
+            <a id="hide2" href="#hide2" class="footer-toggle-hide">Opción 3</a>
+            <div class="footer-details">
+              <ul class="list-unstyled" id="pageSubmenu">
+                <li>
+                  <a class="register-custom" href="#">Page 1</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Page 2</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Page 3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li>
           <a class="nav-link register-custom" (click)="onTabClick(0)">HOME</a>

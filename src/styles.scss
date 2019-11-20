@@ -1823,6 +1823,41 @@ body {
     }
   }
 
+  #sidebar ul li:last-child() {
+    border: 0px;
+
+  }
+
+  #sidebar ul li {
+
+    .footer-toggle-show,
+    .footer-toggle-hide {
+      border-bottom: 1px solid;
+      display: block;
+    }
+
+    .footer-details,
+    .footer-toggle-hide,
+    .footer-toggle-show:target {
+      display: none;
+      color: #5a5a5a;
+    }
+
+    .footer-toggle-show:target+.footer-toggle-hide,
+    .footer-toggle-show:target~.footer-details {
+      display: block;
+    }
+
+    .footer-toggle-show:after,
+    .footer-toggle-hide:after {
+      float: right;
+      content: "+";
+    }
+
+    .footer-toggle-hide:after {
+      transform: rotate(45deg) scale(1.09);
+    }
+  }
 
 }
 
