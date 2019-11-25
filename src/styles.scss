@@ -1823,40 +1823,178 @@ body {
     }
   }
 
+  #sidebar ul li {
+    position: relative;
+  }
+
   #sidebar ul li:last-child() {
     border: 0px;
 
   }
 
-  #sidebar ul li {
 
-    .footer-toggle-show,
-    .footer-toggle-hide {
-      border-bottom: 1px solid;
+
+
+
+
+  .nav-side-menu .toggle-btn {
+    display: none;
+  }
+
+  .nav-side-menu ul,
+  .nav-side-menu li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 35px;
+    cursor: pointer;
+    /*    
+      .collapsed{
+         .arrow:before{
+                   font-family: FontAwesome;
+                   content: "\f053";
+                   display: inline-block;
+                   padding-left:10px;
+                   padding-right: 10px;
+                   vertical-align: middle;
+                   float:right;
+              }
+       }
+  */
+  }
+
+  .nav-side-menu ul :not(collapsed) .arrow:before,
+  .nav-side-menu li :not(collapsed) .arrow:before {
+    font-family: FontAwesome;
+    content: "\f078";
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    float: right;
+  }
+
+  .nav-side-menu ul .active,
+  .nav-side-menu li .active {
+    border-left: 3px solid #d19b3d;
+    /*background-color: #4f5b69;*/
+    background-color: LimeGreen;
+  }
+
+  .nav-side-menu ul .sub-menu li.active,
+  .nav-side-menu li .sub-menu li.active {
+    /*color: #d19b3d;*/
+    color: red;
+  }
+
+  .nav-side-menu ul .sub-menu li.active a,
+  .nav-side-menu li .sub-menu li.active a {
+    /*color: #d19b3d;*/
+    color: red;
+  }
+
+  .nav-side-menu ul .sub-menu li,
+  .nav-side-menu li .sub-menu li {
+    /*background-color: #181c20; sub menu item*/
+    background-color: HoneyDew;
+    ;
+    border: none;
+    line-height: 28px;
+    border-bottom: 1px solid #23282e;
+    margin-left: 0px;
+  }
+
+  .nav-side-menu ul .sub-menu li:hover,
+  .nav-side-menu li .sub-menu li:hover {
+    /*background-color: #020203; hover inside sub menu*/
+    /*kground-color: #00FFFF;*/
+    background-color: LightGreen;
+  }
+
+  .nav-side-menu ul .sub-menu li:before,
+  .nav-side-menu li .sub-menu li:before {
+    font-family: FontAwesome;
+    content: "\f105";
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    position: absolute;
+    color: #000;
+    top: 50%;
+    bottom: 100%;
+    margin: auto;
+  }
+
+  .nav-side-menu li {
+    padding-left: 0px;
+    border-left: 3px solid #2e353d;
+    border-bottom: 1px solid #23282e;
+  }
+
+  .nav-side-menu li a {
+    text-decoration: none;
+    /*color: #e1ffff; nav-side-menu MAIN FONT */
+    /*color: red;*/
+  }
+
+  .nav-side-menu li a i {
+    padding-left: 10px;
+    width: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-side-menu li:hover {
+    border-left: 3px solid #d19b3d;
+    /*background-color: #4f5b69; nav-side-menu hover MENU*/
+    background-color: LimeGreen;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  @media (max-width: 767px) {
+    .nav-side-menu {
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .nav-side-menu .toggle-btn {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 10 !important;
+      padding: 3px;
+      /*background-color: #ffffff;*/
+      background-color: #ffffff;
+      color: #000;
+      /*color: red;*/
+      width: 40px;
+      text-align: center;
+    }
+
+    .brand {
+      text-align: left !important;
+      font-size: 22px;
+      padding-left: 20px;
+      line-height: 50px !important;
+    }
+  }
+
+  @media (min-width: 767px) {
+    .nav-side-menu .menu-list .menu-content {
       display: block;
     }
+  }
 
-    .footer-details,
-    .footer-toggle-hide,
-    .footer-toggle-show:target {
-      display: none;
-      color: #5a5a5a;
-    }
-
-    .footer-toggle-show:target+.footer-toggle-hide,
-    .footer-toggle-show:target~.footer-details {
-      display: block;
-    }
-
-    .footer-toggle-show:after,
-    .footer-toggle-hide:after {
-      float: right;
-      content: "+";
-    }
-
-    .footer-toggle-hide:after {
-      transform: rotate(45deg) scale(1.09);
-    }
+  body {
+    margin: 0px;
+    padding: 0px;
   }
 
 }
