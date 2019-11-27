@@ -78,7 +78,7 @@
                   Tipo de mercado
                 </label>
 
-                <!-- Ejemplo del grou button donde no hay ninguno seleccionado -->
+                <!-- Ejemplo del grou button donde no hay ninguno seleccionado y usando button -->
                 <div class='e-btn-group  groupbuttons-primario'>
                   <button ejs-button>M22</button>
                   <button ejs-button>M33</button>
@@ -90,10 +90,13 @@
                   Interversión de promotor
                 </label>
 
-                <!-- Ejemplo que se le a agregado la clase active  para mostrar el toggle seleccionado -->
+                <!-- Ejemplo   para mostrar el toggle seleccionado con radio buttons tomado de la documentacion Syncfusion-->
                 <div class='e-btn-group groupbuttons-primario'>
-                  <button ejs-button>SI</button>
-                  <button ejs-button class="active"> NO </button>
+                  <input type="radio" id="male" name="gender" value="male" checked />
+                  <label class="e-btn" for="male">SI</label>
+                  <input type="radio" id="female" name="gender" value="female" />
+                  <label class="e-btn" for="female">No</label>
+                  <!-- se removio la class="active" porque no se supo utilizar se agregaron los radio button que muestra la documentación-->
                 </div>
               </div>
             </div>

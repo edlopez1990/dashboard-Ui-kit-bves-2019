@@ -77,6 +77,8 @@ import { GridtoolbarComponent } from './allcomponents/gridtoolbar/gridtoolbar.co
 import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
 import { GridtgroupingComponent } from './allcomponents/gridtgrouping/gridtgrouping.component';
 
+
+
 enableRipple(true);
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

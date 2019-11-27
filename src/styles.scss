@@ -452,11 +452,18 @@ body {
     border-radius: 5px;
     height: 44px;
 
-    button {
+    button,label {
       width: calc(100% / 2);
       border-radius: 5px;
       margin-top: 1px;
-      margin-bottom: 1px;
+      margin-bottom: 1px !important;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+    input:checked + label.e-btn{
+      background-color: #002b98 !important;
+      color: #fff !important;
     }
 
     button:nth-child(1) {
@@ -467,6 +474,17 @@ body {
       margin-right: 3px !important;
     }
 
+   label:nth-child(2) {
+      margin-left: 3px !important;
+    }
+
+    label:nth-child(4) {
+      margin-right: 3px !important;
+    }
+    label:hover,
+    label:active,
+    label:focus,
+    label.active,
     button:hover,
     button:active,
     button:focus,
@@ -474,6 +492,9 @@ body {
       background-color: #002b98 !important;
       color: #fff !important;
     }
+
+
+
   }
 
   // 08 - ui / kit group buttons compra
