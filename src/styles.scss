@@ -452,7 +452,8 @@ body {
     border-radius: 5px;
     height: 44px;
 
-    button,label {
+    button,
+    label {
       width: calc(100% / 2);
       border-radius: 5px;
       margin-top: 1px;
@@ -461,7 +462,8 @@ body {
       align-items: center;
       justify-content: center;
     }
-    input:checked + label.e-btn{
+
+    input:checked+label.e-btn {
       background-color: #002b98 !important;
       color: #fff !important;
     }
@@ -474,13 +476,14 @@ body {
       margin-right: 3px !important;
     }
 
-   label:nth-child(2) {
+    label:nth-child(2) {
       margin-left: 3px !important;
     }
 
     label:nth-child(4) {
       margin-right: 3px !important;
     }
+
     label:hover,
     label:active,
     label:focus,
@@ -1576,6 +1579,13 @@ body {
     font-size: 12px !important;
     font-weight: 600 !important;
     color: #5a5a5a !important;
+  }
+
+
+  //31 color red ui-badget-red
+  .ui-badget-red {
+    background-color: red !important;
+    color: #fff !important;
   }
 
   .wrap[_ngcontent-c10] {
