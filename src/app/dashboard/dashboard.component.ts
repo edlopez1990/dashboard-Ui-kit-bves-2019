@@ -6,52 +6,38 @@ import * as $ from "jquery";
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.scss"]
 })
-// export class DashboardComponent implements OnInit {
-//   constructor() {}
 
-//   ngOnInit() {}
-// }
 export class DashboardComponent implements OnInit {
   public ngOnInit() {
-  
-
-    $(document).ready(function() {
-      $("#menu-content li a").on('click', function(event){
-    
-        $('li[data-toggle="collapse"]').each(function () {
-            if ($(this).next('ul').length == 0) {
-                $(this).removeAttr('data-toggle').removeAttr('data-target').removeClass('collapsed');
-                $(this).find('span.arrow').remove();
-            }
-        });
-        $('ul#menu-content > ul').on('show.bs.collapse', function (e, obj) {
-            $("ul#menu-content > ul").not(this).removeClass("in");
-            var currentHead = $(this).prev("li");
-            $("ul#menu-content > li").not(currentHead).removeClass("active");
-            $(currentHead).addClass("active");
-        })
-      });
-    });
-
 
   }
+  constructor(private sanitizer: DomSanitizer) {}
+
+// variables
   text =
     "&nbsp &nbsp &nbsp Bolsa de Valores de El Salvador®. Todos los derechos reservado";
   tabIndex = 0;
+  title = "micro-front";
+  toShow: SafeHtml = "";
+
+
   onTabClick(index) {
     this.tabIndex = index;
     if (index === 2) {
       this.toggleMicroTwo();
     }
-
     // cierro el sidebar al dar click en algun link de la pagina
     this.toggle_sidebar();
   }
-  title = "micro-front";
 
-  toShow: SafeHtml = "";
+  onTabClicksidebarleft(index){
+    this.tabIndex = index;
+    if (index === 2) {
+      this.toggleMicroTwo();
+    }
+  }
 
-  constructor(private sanitizer: DomSanitizer) {}
+
 
   // agrego una variable para validar y poder control sobre el toggle del sidebar
   status: boolean = true;
@@ -64,6 +50,10 @@ export class DashboardComponent implements OnInit {
   }
 
   toggle_dropdown() {}
+
+
+
+  
   private loadScript(url: string): void {
     //cargamos el escript que nos ayudara a mostrar a nuestros componentes
     if (document.querySelectorAll(`script[src='${url}']`).length === 0) {
