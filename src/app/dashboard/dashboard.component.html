@@ -7,121 +7,89 @@
         <h3>Menú</h3>
       </div>
 
-
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-      <div class="nav-side-menu">
-        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-
-        <div class="menu-list">
-
-          <ul id="menu-content" class="menu-content collapse out">
+      <ul class="list-unstyled components">
 
 
-            <li data-toggle="collapse" data-target='#Library' class="collapsed">
-              <a href='#'>
-                <i class=''></i> Library
-                <span class="arrow"></span>
-              </a>
-            </li>
-            <ul id='Library' class='sub-menu collapse'>
-              <li data-toggle='collapse' data-target='#submenu1' class='collapsed'>
-                <a href='#'>Booking <span class='arrow'></span></a>
-              </li>
-              <ul id='submenu1' class='sub-menu collapse'>
-                <li><a href='#'>Make Booking</a></li>
-                <li><a href='#'>Modify Booking</a></li>
-                <li><a href='#'>Cancel Booking</a></li>
+        <li class="active dropdown-sub dropdown-inactive">
+
+
+          <!-- <div class="bgcolor">
+
+            <div>
+              <a id="show1" href="#show1" class="footer-toggle-show">Summary goes here 2</a>
+              <a id="hide1" href="#hide1" class="footer-toggle-hide">Summary goes here</a>
+              <div class="footer-details">
+                Content goes here. 1
+              </div>
+            </div>
+
+            <div>
+              <a id="show2" href="#show2" class="footer-toggle-show">Summary goes here</a>
+              <a id="hide2" href="#hide2" class="footer-toggle-hide">Summary goes here</a>
+              <div class="footer-details">
+                Content goes here.2
+              </div>
+            </div>
+          </div> -->
+
+
+          <div>
+            <a id="show1" href="#show1" class="footer-toggle-show">Opción 1</a>
+            <a id="hide1" href="#hide1" class="footer-toggle-hide">Opción 1</a>
+            <div class="footer-details">
+              <ul class=" list-unstyled" id="homeSubmenu">
                 <li>
-                  <a href='#'>View booking history and blacklist
-                    scores</a>
+                  <a class="register-custom" href="#">Home 1</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Home 2</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Home 3</a>
                 </li>
               </ul>
-            </ul>
+            </div>
+          </div>
+        </li>
 
-            <li data-toggle="collapse" data-target='#submenu2' class="collapsed">
-              <a href='#'>
-                <i class=''></i>
-                PC Lab
-                <span class="arrow"></span>
-              </a>
-            </li>
-
-            <ul id='submenu2' class='sub-menu collapse'>
-              <li data-toggle='collapse' data-target='#3100' class='collapsed'>
-                <a href='#'>Booking <span class='arrow'></span>
-                </a>
-                <ul id='3100' class='sub-menu collapse'>
-                  <li><a href='#'>Make Booking</a></li>
-                  <li><a href='#'>Modify Booking</a></li>
-                  <li><a href='#'>Cancel Booking</a></li>
-                  <li>
-                    <a href='#'>View booking history and blacklist
-                      scores</a>
-                  </li>
-                </ul>
-              </li>
-
-            </ul>
-
-            <li data-toggle="collapse" data-target='#submenu3' class="collapsed">
-              <a href='#'>
-                <i class=''></i>
-                Multi purpose Hall<span class="arrow"></span>
-              </a>
-            </li>
-            <ul id='submenu3' class='sub-menu collapse'>
-              <li data-toggle='collapse' data-target='#4100' class='collapsed'><a href='#'>Booking <span
-                    class='arrow'></span></a></li>
-              <ul id='4100' class='sub-menu collapse'>
-                <li><a href='#'>Make Booking</a></li>
-                <li><a href='#'>Cancel Booking On Cashier Payment</a></li>
+        <li>
+          <a class="register-custom" href="#">Opción 2</a>
+        </li>
+        <li class="dropdown-sub dropdown-inactive">
+          <div>
+            <a id="show2" href="#show2" class="footer-toggle-show">Opción 3</a>
+            <a id="hide2" href="#hide2" class="footer-toggle-hide">Opción 3</a>
+            <div class="footer-details">
+              <ul class="list-unstyled" id="pageSubmenu">
+                <li>
+                  <a class="register-custom" href="#">Page 1</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Page 2</a>
+                </li>
+                <li>
+                  <a class="register-custom" href="#">Page 3</a>
+                </li>
               </ul>
-            </ul>
-
-            <li data-toggle="collapse" data-target='#PCLab' class="collapsed">
-              <a class="nav-link register-custom" (click)="onTabClick(0)">
-                <i class=''></i>
-                HOME
-                <span class="arrow"></span>
-              </a>
-            </li>
-
-            <li data-toggle="collapse" data-target='#PCLab' class="collapsed">
-              <a class="nav-link register-custom" (click)="onTabClick(1)">
-                <i class=''></i>
-                UI/KIT<span class="arrow"></span>
-              </a>
-            </li>
-
-            <li data-toggle="collapse" data-target='#PCLab' class="collapsed">
-              <a class="nav-link register-custom" (click)="onTabClick(2)">
-                <i class=''></i>
-                ERROR
-
-                <span class="arrow"></span>
-              </a>
-            </li>
-
-            <li data-toggle="collapse" data-target='#PCLab' class="collapsed">
-              <a class="nav-link register-custom" (click)="onTabClick(3)">
-                <i class=''></i>
-                DETALLE
-                <span class="arrow"></span>
-              </a>
-            </li>
-
-            <li data-toggle="collapse" data-target='#PCLab' class="collapsed">
-              <a class="nav-link register-custom" (click)="onTabClick(4)">
-                <i class=''></i>
-                REGISTRO
-                <span class="arrow"></span>
-              </a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(0)">HOME</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(1)">UI/KIT</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(3)">Detalle</a>
+        </li>
+        <li>
+          <a class="nav-link register-custom" (click)="onTabClick(4)">Registro</a>
+        </li>
+      </ul>
     </nav>
     <!-- Page Content  -->
     <!-- aqui hare el toggle de la clase para poder expandir el sidebar -->
@@ -157,9 +125,6 @@
 
               <a class="dropdown-trigger" href="#">
                 <img class="bell" src="./assets/img/bell.png" alt="" />
-                <!-- Notification Badge -->
-                <span
-                  class="e-badge e-badge-primary e-badge-overlap e-badge-notification e-badge-circle ui-badget-red ">6</span>
               </a>
               <div class="dropdown-menu  ui-tooltip-notification ">
                 <ul class=" list">
@@ -293,9 +258,9 @@
                     </li>
                     <li>
                       <div>
-                        <strong>Carlos Martinez</strong>
+                        <strong>carlosmartinez@bolsadevalores.com</strong>
                         <br />
-                        <label for="">Banco Atlántida</label>
+                        <label for="">carlosmartinez@bolsadevalores.com</label>
                       </div>
                     </li>
                   </ul>
@@ -354,12 +319,12 @@
           <div>
             <ul>
               <li>
-                <a class="circle-blue" (click)="onTabClicksidebarleft(0)">
+                <a href="" class="circle-blue">
                   <img src="./assets/img/frame_white.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a class="circle-blue" (click)="onTabClicksidebarleft(3)">
+                <a href="" class="circle-blue">
                   <img src="./assets/img/frame_white.svg" alt="" />
                 </a>
               </li>
