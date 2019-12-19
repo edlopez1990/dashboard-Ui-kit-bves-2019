@@ -6,31 +6,56 @@
       <div class="sidebar-header">
         <h3>Menú</h3>
       </div>
+      <div class="container_sidebar">
+        <ul class="">
 
-      <ul class="list-unstyled components">
+          <li class="">
+            <a tabindex="-1" href="#">Menu 1 </a>
+            <ul class="">
+
+              <li class=""><a tabindex="-1" href="#">item 1</a></li>
+              <li class=""><a href="#">item 2</a></li>
+              <li class=""><a href="#">item 3</a></li>
+              <li class="">
+                <a href="#">sub menu</a>
+                <ul class="parent">
+                  <li>
+                    <a href="#">
+                      sub item 1
+                    </a>
+                  </li>
+                  <li><a href="#">sub item 2</a></li>
+                  <li><a href="#">sub item 3</a></li>
+                </ul>
+              </li>
+              <li class=""><a href="#">item 4</a></li>
+              <li class=""><a href="#">item 3</a></li>
+              <li class=""><a href="#">item 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link register-custom" (click)="onTabClick(0)">HOME</a>
+          </li>
+          <li>
+            <a class="nav-link register-custom" (click)="onTabClick(1)">UI/KIT</a>
+          </li>
+          <li>
+            <a class="nav-link register-custom" (click)="onTabClick(2)">ERROR</a>
+          </li>
+          <li>
+            <a class="nav-link register-custom" (click)="onTabClick(3)">Detalle</a>
+          </li>
+          <li>
+            <a class="nav-link register-custom" (click)="onTabClick(4)">Registro</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- <ul class="list-unstyled components">
 
 
         <li class="active dropdown-sub dropdown-inactive">
 
-
-          <!-- <div class="bgcolor">
-
-            <div>
-              <a id="show1" href="#show1" class="footer-toggle-show">Summary goes here 2</a>
-              <a id="hide1" href="#hide1" class="footer-toggle-hide">Summary goes here</a>
-              <div class="footer-details">
-                Content goes here. 1
-              </div>
-            </div>
-
-            <div>
-              <a id="show2" href="#show2" class="footer-toggle-show">Summary goes here</a>
-              <a id="hide2" href="#hide2" class="footer-toggle-hide">Summary goes here</a>
-              <div class="footer-details">
-                Content goes here.2
-              </div>
-            </div>
-          </div> -->
 
 
           <div>
@@ -89,7 +114,7 @@
         <li>
           <a class="nav-link register-custom" (click)="onTabClick(4)">Registro</a>
         </li>
-      </ul>
+      </ul> -->
     </nav>
     <!-- Page Content  -->
     <!-- aqui hare el toggle de la clase para poder expandir el sidebar -->

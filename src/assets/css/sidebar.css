@@ -47,8 +47,8 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #fff;
-    color: #fff;
+    background: #f1f4f8;
+    color: #5a5a5a;
     transition: all 0.3s;
     border: solid 1px #dfdfdf;
 }
@@ -72,46 +72,7 @@ a:focus {
     border-bottom: solid 1px #dfdfdf;
 }
 
-#sidebar ul.components {
-    padding: 0px 10px;
-}
 
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li {
-    border-bottom: solid 1px #dfdfdf;
-}
-
-#sidebar ul li a {
-    padding: 20px 10px;
-    display: block;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #5a5a5a;
-    text-decoration: none;
-}
-
-#sidebar ul li a:hover {
-    background-color: #bfebd1;
-
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #01973d;
-
-}
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {}
